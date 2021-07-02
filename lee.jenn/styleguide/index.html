@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Styleguide</title>
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../css/storetheme.css">
+
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<!-- favicon -->
+	<link rel="icon" href="../img/cj_favicon.png" sizes="16x16">
+</head>
+
+
+<body>
+	<!-- header top bar -->
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<h1>Styleguide</h1>
+			</div>
+			<div class="flex-stretch"></div>
+			<nav class="flex-none nav">
+				<ul class="container display-flex">
+					<li><a href="#tableofcontents">Table of Contents</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- table of content -->
+	<div class="container" id="tableofcontents">		
+			<h2>Table of Contents</h2>
+			
+			<div class="card">
+				<nav class="nav">
+					<ul>
+						<!-- implemented styleguide -->
+						<li><a href="#typography">Typography</a></li>
+							<ul>
+								<li><a href="#headings">Headings</a></li>
+								<li><a href="#paragraphs">Paragraphs</a></li>
+							</ul>
+						<li><a href="#colors">Colors</a></li>
+						<li><a href="#buttons">Buttons</a></li>
+						<!-- <li><a href="#cards">Cards</a></li>
+						<li><a href="#navigation">Navigation</a></li>
+						<li><a href="#gridsystem">Grid System</a></li>
+						<li><a href="#flexsystem">Flex System</a></li> -->
+					</ul>
+				</nav>
+			</div>
+	</div>
+
+
+
+
+	<!-- typography, font, headings -->
+	<div class="container" id="typography">
+		<h2>Typography</h2>
+
+		<div class="card soft id="headings>	
+			<h3 class="section-title">Headings</h3>
+			<hr size="1px" width="100%" color="#f1f1f1"> 
+
+			<h1 class="h1-style">Heading 1: Playfair Display, Regular, 32px</h1>
+			<h2 class="h2-style">Heading 2: Playfair Display, Regular, 28px</h2>
+			<h3 class="h3-style">Heading 3: Playfair Display, Medium, 20px</h3>
+			<h4 class="h4-style">Heading 4: Open Sans, Bold, 18px</h4>
+
+		</div>
+
+		<div class="card soft" id="paragraphs">
+			<h3 class="section-title">Paragraphs</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">  
+
+			<p class="p-style">Paragraph: Open Sans, Regular, 16px</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus pariatur eligendi iure libero, ipsum eum. Illum, eligendi alias vero at placeat, doloribus obcaecati voluptatem delectus assumenda aliquid pariatur provident.</p>
+			<p>Quae debitis quod, quam alias, fugit sunt qui culpa error velit perspiciatis dolorem tempora, dolore adipisci labore quis modi in aliquid at ut, molestiae. Labore architecto doloribus eaque veritatis quos.</p>
+		</div>
+	</div>
+
+
+	<!-- Colors -->
+	<div class="container" id="colors">
+		<h2>Colors</h2>
+
+		<!-- primary colors -->
+		<div class="card soft">
+			<h3>Primary Colors</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+			
+			<div class="prim-colors color-container">
+				<figure class="figure color-layout">
+					<div class="color-box color-1"></div>
+					<figcaption>#597658</figcaption>
+				</figure>
+
+				<figure class="figure color-layout">
+					<div class="color-box color-2"></div>
+					<figcaption>#1C341B</figcaption>
+				</figure>
+
+				<figure class="figure color-layout">
+					<div class="color-box color-3"></div>
+					<figcaption>#0E240D</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<!-- secondary colors -->
+		<div class="card soft">
+			<h3>Secondary Colors</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+
+			<div class="secondary-colors color-container">
+				<figure class="figure color-layout">
+					<div class="color-box color-4"></div>
+					<figcaption>#D2E8F0</figcaption>
+				</figure>
+
+				<figure class="figure color-layout">
+					<div class="color-box color-5"></div>
+					<figcaption>#BAD5DF</figcaption>
+				</figure>
+
+				<figure class="figure color-layout">
+					<div class="color-box color-6"></div>
+					<figcaption>#A4D2E3</figcaption>
+				</figure>
+			</div>
+		</div>
+
+
+		<!-- neutral colors -->
+		<div class="card soft">
+			<h3>Neutral Colors</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+
+			<div class="neutral-colors color-container">
+				<figure class="figure color-layout">
+					<div class="color-box color-7"></div>
+					<figcaption>#FCFCF3</figcaption>
+				</figure>
+
+				<figure class="figure color-layout">
+					<div class="color-box color-8"></div>
+					<figcaption>#F9F9F9</figcaption>
+				</figure>
+
+				<figure class="figure color-layout">
+					<div class="color-box color-9"></div>
+					<figcaption>#F4F4F4</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Buttons -->
+	<div class="container" id="buttons">
+		<!-- primary button -->
+		<h2>Buttons</h2>
+
+		<div class="card soft">
+			<h3>Primary button</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+
+			<div class="btn-box">
+				<button class="button-style btn-primary">Shop Now</button>
+			</div>	
+		</div>
+
+		<div class="card soft">
+			<h3>Secondary button</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+				
+			<div class="btn-box">
+				<button class="button-style btn-secondary">Shop Now</button>
+			</div>	
+		</div>
+		
+	</div>
+
+
+	<!-- Card types -->
+	<!-- <div class="container" id="cards">
+		<h2>Cards</h2>
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<div class="card">Card</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<div class="card soft">Card Soft</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<div class="card hard">Card Hard</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<div class="card flat">Card Flat</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<div class="card dark">Card Dark</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<div class="card medium">Card Medium</div>
+			</div>
+		</div>
+	</div> -->
+
+
+
+
+	<!-- navigation -->
+	<!-- <div class="container" id="navigation">
+		<h2>Navigation</h2>
+
+		<div class="card soft">
+			<h3>Basic Nav</h3>
+			<nav class="nav">
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li> 
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="card soft">
+			<h3>Flex Nav</h3>
+			<nav class="nav nav-flex">
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="card soft">
+			<h3>Stretch Nav</h3>
+			<nav class="nav nav-stretch">
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="card soft">
+			<h3>Pills Nav</h3>
+			<nav class="nav nav-pills">
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+		<div class="card soft">
+			<h3>Crumbs</h3>
+			<nav class="nav nav-crumbs">
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+		<div class="card soft">
+			<h3>Material</h3>
+			<nav class="nav nav-material">
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</div> -->
+
+
+	<!-- <div class="container">
+		<div class="card">
+			<h3>Basic Figure</h3>
+
+			<figure class="figure">
+				<img src="https://via.placeholder.com/400x400?text=product" alt="figure">
+				<figcaption>Product</figcaption>
+			</figure>
+		</div>
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>Product</figcaption>
+				</figure>
+			</div>
+			
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>Product</figcaption>
+				</figure>
+			</div>
+			
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>Product</figcaption>
+				</figure>
+			</div>
+		</div> -->
+
+
+		<!-- <h3>product grid</h3> -->
+		<!-- another example of figure -->
+		<!-- <div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div>product name</div>
+						<div>$13.99</div>
+					</figcaption>
+				</figure>
+			</div>
+			
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div>product name</div>
+						<div>$13.99</div>
+					</figcaption>
+				</figure>
+			</div>
+			
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div>product name</div>
+						<div>$13.99</div>
+					</figcaption>
+				</figure>
+			</div>
+		</div> -->
+
+
+		<!-- <h3>product overlay</h3> -->
+		<!-- another example of figure -->
+		<!-- <div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>product name</div>
+							<div>$13.99</div>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>product name</div>
+							<div>$13.99</div>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+					<img src="https://via.placeholder.com/400x400?text=product" alt="">
+					<figcaption>
+						<div class="caption-body">
+							<div>product name</div>
+							<div>$13.99</div>
+						</div>
+					</figcaption>
+				</figure>
+			</div> 
+		</div>
+	</div>-->
+
+
+	<!-- grid system -->
+	<!-- <div class="container" id="gridsystem">
+		<h2>Grid System</h2>
+	</div> -->
+
+
+	<!-- flex system -->
+	<!-- <div class="container">
+		<h2>Flex System</h2>
+	</div> -->
+
+
+</body>
+</html> 
