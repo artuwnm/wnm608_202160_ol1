@@ -1,0 +1,71 @@
+:root {
+	--color-offwhite:  #f4f4f4;
+}
+
+body{
+	background-color:var(--color-offwhite) ;
+
+}
+
+.container h2{
+color: var(--color-neutral-dark);
+}
+
+#article1{
+background-image: url(../img/sale.png);
+background-repeat: no-repeat;
+
+
+
+}
+
+.card shop {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card shop button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+
+}
+  /*Footer*/
+  .footer {
+	padding: 3em 5em;
+	text-align: right;
+	background-color: var(--color-neutral-dark);
+	color: var( --color-black:);
+	font-size: 0.75rem;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+
+
+
+
+	.terms-link:hover {
+		text-decoration: underline;
+		color: currentColor;
+	}
+}
