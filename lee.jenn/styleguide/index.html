@@ -16,6 +16,12 @@
 
 	<!-- favicon -->
 	<link rel="icon" href="../img/cj_favicon.png" sizes="16x16">
+
+	<!-- search icon -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- remove icon -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 
@@ -35,7 +41,7 @@
 		</div>
 	</header>
 
-	<!-- table of content -->
+<!-- table of content -->
 	<div class="container" id="tableofcontents">		
 			<h2>Table of Contents</h2>
 			
@@ -50,6 +56,8 @@
 							</ul>
 						<li><a href="#colors">Colors</a></li>
 						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#forms">Forms</a></li>
+						<li><a href="#interactive-elements">Interactive Elements</a></li>
 						<!-- <li><a href="#cards">Cards</a></li>
 						<li><a href="#navigation">Navigation</a></li>
 						<li><a href="#gridsystem">Grid System</a></li>
@@ -62,8 +70,8 @@
 
 
 
-	<!-- typography, font, headings -->
-	<div class="container" id="typography">
+<!-- typography, font, headings -->
+	<div class="container margin-bottom-large" id="typography">
 		<h2>Typography</h2>
 
 		<div class="card soft id="headings>	
@@ -75,9 +83,8 @@
 			<h3 class="h3-style">Heading 3: Playfair Display, Medium, 20px</h3>
 			<h4 class="h4-style">Heading 4: Open Sans, Bold, 18px</h4>
 
-		</div>
-
-		<div class="card soft" id="paragraphs">
+			<br>
+		
 			<h3 class="section-title">Paragraphs</h3>
 			<hr size="1px" width="100%" color="#f1f1f1">  
 
@@ -88,8 +95,8 @@
 	</div>
 
 
-	<!-- Colors -->
-	<div class="container" id="colors">
+<!-- Colors -->
+	<div class="container margin-bottom-large" id="colors">
 		<h2>Colors</h2>
 
 		<!-- primary colors -->
@@ -113,10 +120,9 @@
 					<figcaption>#0E240D</figcaption>
 				</figure>
 			</div>
-		</div>
 
-		<!-- secondary colors -->
-		<div class="card soft">
+			<br>
+
 			<h3>Secondary Colors</h3>
 			<hr size="1px" width="100%" color="#f1f1f1">
 
@@ -136,11 +142,9 @@
 					<figcaption>#A4D2E3</figcaption>
 				</figure>
 			</div>
-		</div>
 
+			<br>
 
-		<!-- neutral colors -->
-		<div class="card soft">
 			<h3>Neutral Colors</h3>
 			<hr size="1px" width="100%" color="#f1f1f1">
 
@@ -165,29 +169,171 @@
 
 
 
-	<!-- Buttons -->
-	<div class="container" id="buttons">
-		<!-- primary button -->
+<!-- Buttons -->
+	<div class="container margin-bottom-large" id="buttons">
+		
 		<h2>Buttons</h2>
 
 		<div class="card soft">
+			<!-- primary button -->
 			<h3>Primary button</h3>
 			<hr size="1px" width="100%" color="#f1f1f1">
 
 			<div class="btn-box">
 				<button class="button-style btn-primary">Shop Now</button>
 			</div>	
-		</div>
 
-		<div class="card soft">
+			<br>
+
+			<!-- secondary button -->
 			<h3>Secondary button</h3>
 			<hr size="1px" width="100%" color="#f1f1f1">
 				
 			<div class="btn-box">
-				<button class="button-style btn-secondary">Shop Now</button>
-			</div>	
-		</div>
+				<button class="button-style btn-secondary">Submit</button>
+			</div>
+
+
+			<br>	
+
+			<!-- ahchor links -->
+			<h3>Anchor links</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+
+			<div class="btn-box">
+				<a href="#" class="anchor-style">Learn More</a>
+			</div>
+					
+		</div>	
+	</div>
+
+
+<!-- Forms -->
+	<div class="container margin-bottom-large" id="forms">
+		<h2>Forms</h2>
 		
+		<div class="card soft">
+			<h3>Basic Form Layout</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+
+			<form action="">
+				<div class="form-control">
+					<label for="" class="form-label">Text Input Example</label>
+					<input type="text" placeholder="text" class="form-input">
+				</div>
+				
+				<div class="form-control">
+					<label for="" class="form-label">Number Input Example</label>
+					<input type="number" placeholder="number" class="form-input">
+				</div>
+
+
+				<div class="form-control">
+					<label for="" class="form-label">Password Input Example</label>
+					<input type="password" placeholder="password" class="form-input">
+				</div>
+				
+
+				<!-- input side-by-side -->
+				<div class="form-control display-flex">
+					<div class="flex-stretch form-half">
+						<label for="" class="form-label">Example: Street Address</label>
+						<input type="search" placeholder="search" class="form-input">
+					</div>
+					
+					<div class="flex-stretch">
+						<label for="" class="form-label">Example: County</label>
+						<input type="search" placeholder="search" class="form-input">
+					</div>	
+				</div>
+			</form>
+
+		</div>
+
+	</div>
+
+
+<!-- Interactive Elements -->
+	<div class="container margin-bottom-large" id="interactive-elements">
+		<h2>Interactive Elements</h2>
+		
+		<div class="card soft">
+			<h3>Search Box</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+			
+			<!-- searchbox -->
+				<form action="" class="searchbox">
+					<i class="fa fa-search"></i>
+					<input type="search" placeholder="Search for a plant">
+				</form>
+
+			<br>
+			
+			<h3>Checkbox</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+			<!-- checkbox -->
+			<div class="checkbox">
+				<label for="input-1"><input type="checkbox" id="input-1">Filter Item 1</label>
+				<label for="input-2"><input type="checkbox" id="input-2">Filter Item 2</label>
+				<label for="input-3"><input type="checkbox" id="input-3">Filter Item 3</label>
+			</div>
+			
+
+
+			<br>
+
+
+			<h3>Item Like</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+
+			<!-- favorite, heart icon -->
+			<div class="favorite">
+				<p class="heart-instruction">Instruction: Click on the Heart for active state</p>
+				<input type="checkbox" id="heart-example" class="hidden">
+				<label for="heart-example">&hearts;</label>
+			</div>
+
+
+
+			<br>
+
+
+
+			<h3>Toggle</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+
+			<!-- toggle -->
+			<div class="toggle">
+				<input type="checkbox" id="toggle-1" class="hidden">
+				<label for="toggle-1"><!-- toggle made in css --></label>
+			</div>
+
+
+			<br>
+
+
+			<h3>Notifications</h3>
+			<hr size="1px" width="100%" color="#f1f1f1">
+			<div class="notifications">
+				<div class="notification notification-success" id="noti-success">
+					<p class="notification-text">Success!</p>
+					<i class="fa fa-times"></i>
+				</div>
+
+				<div class="notification notification-failed" id="noti-fail">
+					<p class="notification-text">Failed</p>
+					<i class="fa fa-times"></i>
+				</div>
+
+				<div class="notification notification-warning" id="noti-warning">
+					<p class="notification-text">Warning</p>
+					<i class="fa fa-times"></i>
+				</div>
+			</div>
+			
+			
+		</div>
+
 	</div>
 
 
