@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../css/storetheme.css">
+	<title>CSS Styleguide OPTIONS</title>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="navbar">
+			<div class="container display-flex">
+		<div class="flex-none">
+		<h1>Styleguide OPTIONS</h1>
+	
+	    </div>
+	<div class="flex-stretch"></div>
+		<nav class="flex-none nav">
+		<ul class="container display-flex" >
+			<li><a href="#tableofcontents">Table of Contents</a></li>
+		</ul>
+	</nav>
+</div>
+	</header>
+	
+	<div class="container" id="tableofcontents">
+		<h2>Table of Contents</h2>
+		<div class="card">
+			<nav class="nav">
+				<ul>
+					<li> <a href="#typography">Typography</a></li>
+					<ul>
+						<li> <a href="#hedings">Headings</a></li>
+						<li> <a href="#Paragraphs">Paragraphs</a></li>
+					</ul>
+						<li><a href="viewvindow">View Window</a></li>
+						<li><a href="#cards">Cards</a></li>
+						<li><a href="#navigations">Navigations</a></li>
+						<li><a href="#gridsystem">Grid System</a></li>
+						<li><a href="#flexsystem">Flex System</a></li>
+						<li><a href="#tables">Tables</a></li>
+						<li><a href="#forms">Forms</a></li>
+					<ul>
+						<li><a href="#inputs">Inputs</a></li>
+						<li><a href="#labels">labels</a></li>
+						<li><a href="#controls">controls</a></li>
+						<li><a href="#buttons">buttons</a></li>
+						<li><a href="#hotdog">Hotdog</a></li>
+					</ul>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="container " id="typography">
+		<h2>Typography</h2>
+		<div class="card soft" id="headings">
+			
+
+			<h3>Headings</h3>
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+
+
+			</div>
+
+	    <div class="card soft " id="Paragraphs">
+			<h3>Paragraphs</h3>
+			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Laudantium ut, mollitia dicta vero dignissimos, consequuntur soluta porro molestias, quaerat aspernatur, incidunt? Exercitationem ullam vero delectus, quia illum doloremque, laborum laboriosam!</p>
+			<p>Tenetur, inventore magnam, doloremque aliquam, cumque dolore, sapiente molestias perferendis nulla in quia doloribus porro adipisci libero sunt possimus voluptates at alias et nihil. Quisquam unde cupiditate vitae voluptates, qui.</p>
+			<p>Nisi velit similique ex provident cumque consequuntur, necessitatibus sunt aspernatur, asperiores quas repudiandae. Nobis, et quos hic delectus. Enim, tempore. Similique sed tempore quo hic suscipit, eligendi, tempora doloribus velit?</p>
+
+
+		
+
+		</div>
+	</div>
+ 
+
+
+	<div class="container" >
+		<h2>Cards</h2>
+		<div class="grid gap">
+			
+				<div class="col-xs-12 col-md-4">
+					<div class="card">Card</div>
+			
+
+			</div>
+			<div class="col-xs-12 col-md-4">
+					<div class="card soft">Card</div>
+			
+
+			</div>
+			<div class="col-xs-12 col-md-4">
+					<div class="card hard">Card</div>
+			
+			</div>
+			<div class="col-xs-12 col-md-4">
+					<div class="card flat">Card</div>
+			
+
+			</div>
+			<div class="col-xs-12 col-md-4">
+					<div class="card dark">Card</div>
+			
+
+			</div>
+			<div class="col-xs-12 col-md-4">
+					<div class="card medium">Card</div>
+			
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="container">
+		<h2>View Window</h2>
+	</div>
+			
+<script>
+	const makeNav = (classes='') =>{
+const links =['home', 'store', 'about']
+let ran =Math.floor(Math.random()*links.length);
+document.write(`
+		<div>
+		<nav class="${classes}">
+				<ul>
+				${links.reduce((r,o,i)=>{
+					return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`;
+				},'')}
+					
+				</ul>
+	
+	</nav>
+
+		</div>
+
+
+	`);
+  } 																																																						
+</script>
+
+	<div class="container" id="navigations">
+		<h2>Navigations</h2>
+
+
+
+		<div class="card soft">
+			<h3>Basic Nav</h3>
+		<script>makeNav('nav')</script>
+			
+			
+		</div>
+
+	
+
+<div class="card soft">
+			<h3>Flex Nav</h3>
+			<script>makeNav('nav nav-flex')</script>
+
+		</div>
+
+
+        <div class="card soft">
+			<h3>Stretch Nav</h3>
+	<script>makeNav('nav nav-stretch')</script>
+			
+				
+		</div>
+
+
+
+		<div class="card soft">
+			<h3>Pills Nav</h3>
+		<script>makeNav('nav nav-pills')</script>
+			
+		</div>
+
+		<div class="card soft">
+			<h3> Crumbs Nav</h3>
+		<script>makeNav('nav nav-crumbs')</script>
+			
+		</div>
+
+
+		<div class="card soft">
+			<h3> Material</h3>
+		<script>makeNav('nav nav-material')</script>
+			
+		</div>
+
+	</div>
+
+
+<script>
+	$("#navigations a").on("click",function(e){
+		e.preventDefault();
+		$(this).closest("li").addClass("active")
+		.siblings().removeClass("active")
+	})
+</script>
+
+
+
+
+
+	<div class="container">
+		<h2>Grid System</h2>
+	</div>
+
+
+	<div class="container">
+		<h2>Flex System</h2>
+	</div>
+
+
+	<div class="container">
+		<h2>View Window</h2>
+    </div>
+
+<div class="container">
+		<h2>Grid System</h2>
+	</div>
+
+<script>
+	
+	const makeTable = (classes='') => {
+		const head =['Day','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+		const body =[
+		['name', "name", 'name', "name"],
+		['name', "name", 'name', "name"],	
+		['name', "name", 'name', "name"],
+		['name', "name", 'name', "name"],
+
+
+
+		];
+	
+	//let ran = Math.floor(Math.random()*links.length);
+
+	document.write(`
+	<table class="${classes}">
+	<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+		<tbody>${body.reduce((r,o,i)=>r+
+			`<tr>${
+				[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+			}</tr>`,'')
+			}</tbody>
+			</table>
+		`);
+	}	
+</script>
+
+
+
+
+
+	<div class="container" id="tables">
+		<h2>Tables</h2>
+	
+
+			<div class="card soft">
+				<h3>Basic Table 
+					<script>makeTable("table")</script>
+				</h3>
+			</div>
+
+
+			<div class="card soft">
+				<h3>Striped Table 
+					<script>makeTable("table striped")</script>
+				</h3>
+			</div>
+
+
+			<div class="card soft">
+				<h3>Striped Lined Verticle 
+					<script>makeTable("table lined vertical")</script>
+				</h3>
+			</div>
+
+			<div class="card soft">
+				<h3>Striped Lined Horizontal
+					<script>makeTable("table lined horizontal")</script>
+				</h3>
+			</div>
+
+			<div class="card soft">
+				<h3> Lined border
+					<script>makeTable("table lined border")</script>
+				</h3>
+			</div>
+
+			<div class="card soft">
+				<h3> Table Lined All
+					<script>makeTable("table lined all")</script>
+				</h3>
+			</div>
+
+			<div class="card soft">
+				<h3> Combinations
+					<script>makeTable("table lined vertical border striped")</script>
+				</h3>
+			</div>
+
+
+			<h2 id="figures">Figures</h2>
+			<div class="card">
+				<h3>Basic Figure </h3>
+
+				<figure class="figure">
+					<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                    <figcaption>product</figcaption>
+				</figure>
+
+			
+			</div>
+					<h3>Product Grid</h3>
+					<div class="grid gap">
+					
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+						<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                   		 <figcaption>product</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                    		<figcaption>product</figcaption>
+						</figure>
+					</div>
+					
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+						<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                    	<figcaption>product</figcaption>
+						</figure>
+					</div>
+				</div>
+
+					<h3>Product Grid</h3>
+					<div class="grid gap">
+					
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure  product">
+						<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                   		 <figcaption>
+                   		 	<div>Product Name</div>
+                   		 <div>Price</div>
+                   		 </figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                    		<figcaption>
+                    			<div>Product Name</div>
+								<div>Price</div>
+                    		</figcaption>
+						</figure>
+					</div>
+					
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+						<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                    	<figcaption>
+                    		<div>Product Name</div>
+							<div>Price</div>
+                    	</figcaption>
+						</figure>
+					</div>
+				</div>
+	</div>
+
+
+
+	<div class="container" id="forms">
+		<h2>Forms</h2>
+
+		<h3>Inputs</h3>
+
+		<div class="card soft">
+			<h3>Default Inputs</h3>
+			<form>
+				<input type="text"><br>
+				<input type="number"><br>
+				<input type="password"><br>
+				<input type="url"><br>
+				<input type="email"><br>
+				<input type="datetime-local"><br>
+				<input type="date"><br>
+				<input type="search"><br>
+			</form>
+
+
+		<h3> Form Inputs</h3>
+			<form>
+				<input type="text" placeholder="Text"  class="form-input">
+
+				<input type="number"placeholder="Number" class="form-input">
+				<input type="password" placeholder="Password" class="form-input">
+				<input type="search"placeholder="Search" class="form-input">
+			</form>
+
+
+			<h3>Form Lable</h3>
+			
+			<form>
+				<label class="form-label">Example</label>
+				<input type="text" placeholder="Text"  class="form-input">
+				<label class="form-label">Example</label>
+				<input type="number" placeholder="Number" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="password" placeholder="Password" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="search"  placeholder="Search" class="form-input">
+			</form>
+
+
+			<h3>Form control</h3>
+			<form>
+
+				<div class="from-control">
+					<label class="form-label">Example</label>
+					<input type="text" placeholder="Text"  class="form-input">
+				</div>
+
+				<div class="from-control">
+					<label class="form-label">Example</label>
+					<input type="number" placeholder="Number" class="form-input">
+				</div>
+
+				<div class="from-control">	
+					<label class="form-label">Example</label>
+					<input type="password" placeholder="Password" class="form-input">
+				</div>
+
+				<div class="from-control display-flex flex-align-center">
+					<div class="flex-stretch">
+						<label class="form-none">Example</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search"  placeholder="Search" class="form-input ">
+					</div>
+					<div class="flex-stretch">
+						<label class="form-none">Example</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search"  placeholder="Search" class="form-input ">
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+
+		<h3>Buttons</h3>
+
+
+		<div class="card soft">
+			<h3>Default Buttons</h3>
+
+			<button>Button</button>
+
+			<h3>Form Buttons</h3>
+
+			<div class="form-control">
+				<button type="form-button" class="form-button">Button</button>
+			</div>
+
+			<div class="form-control">
+				<input type="button" class="form-button" value="Input ">
+			</div>
+
+			<div class="form-control">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+
+		</div>
+
+
+
+		<h2>Hotdog</h2>
+
+		<div class="card soft">
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog " placeholder="Search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form class="card">
+					<input type="search" class="hotdog dark " placeholder="Search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form class= "card dark">
+					<input type="search" class="hotdog light" placeholder="Search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form class="hotdog">
+					<span>&equiv;</span>
+					<input type="search"  placeholder="Search">
+				</form>
+			</div>
+
+			<div class="form-control">
+				<form class="hotdog">
+					
+					<input type="search"  placeholder="Search">
+					<span>&equiv;</span>
+				</form>
+			</div>
+
+
+			<h2 id="select">Select</h2>
+				<div class="card soft">
+					<div class="form-select">
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+					<div class="display-flex">
+						<div class="flex-stretch"></div>
+						<div class="flex-stretch">
+
+				<div class="card soft">
+					<div class="form-select">
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+</div>
+			<h2 id="checkboxes">Check Boxes</h2>
+
+			<div class="card soft">
+				<label>Label <input type="checkbox" id="input-1"> </label>
+				<label for="input-1">Label</label>
+
+
+				<h3>Heart Checkbox</h3>
+				<div class="favorite">
+				<input type="checkbox" id="heart-example" class="hidden"> 
+				<label for="heart-example">&hearts;</label>
+				</div>
+			
+				<h3>Toggle</h3>
+				<div class="toggle">
+					<input type="checkbox" id="toggle-1" class="hidden"> 
+					<label for="toggle-1"></label>
+				</div>
+
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<label for="toggle-2 " class="form-label">Display Warning!!!</label>
+				</div>
+                <div class="flex-none">
+                
+                	<div class="toggle" style="font-size: 2em">
+					<input type="checkbox" id="toggle-2" class="hidden"> 
+					<label for="toggle-2"></label>
+				</div>
+			</div>
+			</div>
+			</div>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

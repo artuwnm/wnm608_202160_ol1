@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../css/storetheme.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<title>CSS Styleguide</title>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<header class="navbar">
+			<div class="container display-flex">
+		<div class="flex-none">
+		<h1>Styleguide</h1>
+	
+	    </div>
+	<div class="flex-stretch"></div>
+		<nav class="flex-none nav">
+		<ul class="container display-flex" >
+			<li><a href="#tableofcontents">TABLE OF CONTENTS</a></li>
+		</ul>
+	</nav>
+</div>
+	</header>
+
+
+
+<!----------TABLE OF CONTENTENTS----------------->
+	<div class="container" id="tableofcontents">
+		<h2>Table of Contents</h2>
+			<div class="card">
+				<nav class="nav">
+					<ul>
+						<li><a href="#typography">Typography</a></li>
+						<li> <a href="#hedings">Headings</a></li>
+						<li> <a href="#Paragraphs">Paragraphs</a></li>
+						<li> <a href="#cards">Cards</a></li>
+						<li> <a href="#navigations">Navigations</a></li>
+						<li> <a href="#gridsystem">Grid System</a></li>
+						<li> <a href="#color">Color</a></li>
+						<li> <a href="#figures">Figures</a></li>
+						<li><a href="#forms">Forms</a></li>
+						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#hotdog">Hotdog</a></li>
+				</nav>
+			</div>
+				
+
+		
+		
+
+								
+
+
+		
+
+<!----------TYPOGRAPHY----------------->
+			<div class="container " id="typography">
+					<h2>Typography</h2>
+					<div class="card soft" id="headings">
+						
+
+						<h3>Headings </h3>
+						<h1>Heading 1</h1>
+						<h2>Heading 2</h2>
+						<h3>Heading 3</h3>
+						<h4>Heading 4</h4>
+
+			</div>
+					  <div class="card soft " id="Paragraphs">
+			<h3>Paragraphs</h3>
+			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Laudantium ut, mollitia dicta vero dignissimos, consequuntur soluta porro molestias, quaerat aspernatur, incidunt? Exercitationem ullam vero delectus, quia illum doloremque, laborum laboriosam!</p>
+			<p>Tenetur, inventore magnam, doloremque aliquam, cumque dolore, sapiente molestias perferendis nulla in quia doloribus porro adipisci libero sunt possimus voluptates at alias et nihil. Quisquam unde cupiditate vitae voluptates, qui.</p>
+			<p>Nisi velit similique ex provident cumque consequuntur, necessitatibus sunt aspernatur, asperiores quas repudiandae. Nobis, et quos hic delectus. Enim, tempore. Similique sed tempore quo hic suscipit, eligendi, tempora doloribus velit?</p>
+
+
+		
+
+		</div>	
+			</div>
+<!----------CARDS`--------------------------------->
+
+
+
+
+	<div class="container" id="cards" >
+		<h2>Cards</h2>
+		<div class="grid gap" id="cards">
+			
+				<div class="col-xs-12 col-md-4">
+					<div class="card">Card</div>
+
+
+
+
+	</div>
+			<div class="col-xs-12 col-md-4">
+					<div class="card medium">Card</div>
+			
+
+			</div>
+</div>
+<!----------NAVIGATIONS--------------------------------->
+
+<div class="container" id="view window">
+		<h2>View Window</h2>
+	</div>
+			
+<script>
+	const makeNav = (classes='') =>{
+const links =['home', 'store', 'Table of Contents']
+let ran =Math.floor(Math.random()*links.length);
+document.write(`
+		<div>
+		<nav class="${classes}">
+				<ul>
+				${links.reduce((r,o,i)=>{
+					return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`;
+				},'')}
+					
+				</ul>
+	
+	</nav>
+
+		</div>
+
+
+	`);
+  } 		
+
+  </script>
+  <div class="container" id="navigations">
+  <div class="card soft">
+			<h3> Material</h3>
+		<script>makeNav('nav nav-material')</script>
+			
+		</div>																																																				
+</div>	
+
+<!----------GRID SYSTEM--------------------------------->
+
+					<h2>Grid</h2>
+					
+
+<div class="container">
+	<div class="card soft">
+	<div class="grid" id="gridsystem">
+		<div class="col-xs-6">column 6</div>
+		<div class="col-xs-6">column 6</div>
+	</div>
+	<div class="grid gap">
+		<div class="col-xs-4">column 4</div>
+		<div class="col-xs-4">column 4</div>
+		<div class="col-xs-4">column 4</div>
+
+
+</div>	
+</div>
+
+</div>
+	
+<!----------COLORS--------------------------------->
+<h2>Colors</h2>
+<h3>Neutral Colors</h3>
+					<div class="grid gap">
+					
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure" id="color">
+						<img src="../img/Athens Gray.jpg">
+                   		 <figcaption>#e6e7ec  </figcaption>
+                   		 <figcaption>Athens Gray</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="../img/Oslo Gray.jpg">
+
+                    		 <figcaption>#939595  </figcaption>
+                    		<figcaption>Oslo Gray</figcaption>
+						</figure>
+					</div>
+					
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+						<img src="../img/Thunder.jpg" alt="">
+                    	<figcaption>#251e1f</figcaption>
+                    	<figcaption>Thunder</figcaption>
+						</figure>
+					</div>
+				</div>
+
+<h3>Main Colors</h3>
+					<div class="grid gap">
+					
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+						<img src="../img/paleSpring.jpg">
+                   		 <figcaption>#E7F4B8  </figcaption>
+                   		 <figcaption>Pale Spring Bud</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="../img/JuneBud.jpg">
+
+                    		 <figcaption>#B7DE2B </figcaption>
+                    		<figcaption>June Bud</figcaption>
+						</figure>
+					</div>
+					
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+						<img src="../img/OliveDrab.jpg" alt="">
+                    	<figcaption>#779117</figcaption>
+                    	<figcaption>Olive Drab 3 </figcaption>
+						</figure>
+					</div>
+				</div>
+	<h3>Sub</h3>
+						<div class="grid gap">
+					
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+						<img src="../img/MedChapagne.jpg">
+                   		 <figcaption>#FEEBAF </figcaption>
+                   		 <figcaption>Medium Champagne</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="../img/Corn.jpg">
+
+                    		 <figcaption>#f2bc04</figcaption>
+                    		<figcaption>Corn</figcaption>
+						</figure>
+					</div>
+					
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+						<img src="../img/DarkGoldenred.jpg" alt="">
+                    	<figcaption>#B68C02</figcaption>
+                    	<figcaption>Dark Goldenred </figcaption>
+						</figure>
+					</div>
+				</div>
+
+				<div class="container" id="forms">
+		<h2>Forms</h2>
+
+		<h3>Inputs</h3>
+<div class="card soft">
+			<h3>Default Inputs</h3>
+			<form>
+				<input type="text" placeholder="Name" class="form-input">
+				<input type="number"placeholder="Number" class="form-input">
+				<input type="password" placeholder="Password" class="form-input">
+				<input type="email" placeholder="Email" class="form-input">
+				<input type="search"placeholder="Search" class="form-input">
+			</form>
+</div>
+	<h3>Buttons</h3>
+
+
+		<div class="card soft" id="buttons">
+			<h3>Default Buttons</h3>
+
+			<button>Button</button>
+
+			<h3>Form Buttons</h3>
+
+			<div class="form-control">
+				<button type="form-button" class="form-button">Button</button>
+			</div>
+
+			<div class="form-control">
+				<input type="button" class="form-button" value="Input ">
+			</div>
+
+		</div>
+
+<!----------Figures------------------------------------------------------------->
+ 	<h2 id="figures">Figures</h2>
+			<div class="card">
+				<h3>Basic Figure </h3>
+
+				<figure class="figure">
+					<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                    <figcaption>product</figcaption>
+				</figure>
+			</div>
+
+				<h3>Product Grid</h3>
+					<div class="grid gap">
+					
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure  product">
+						<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                   		 <figcaption>
+                   		 	<div>Product Name</div>
+                   		 <div>Price</div>
+                   		 </figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                    		<figcaption>
+                    			<div>Product Name</div>
+								<div>Price</div>
+                    		</figcaption>
+						</figure>
+					</div>
+					
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+						<img src="https://via.placeholder.com/400X400?text=product" alt="">
+                    	<figcaption>
+                    		<div>Product Name</div>
+							<div>Price</div>
+                    	</figcaption>
+						</figure>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+<!----------Hotdog------------------------------------------------------------->
+	<h2>Hotdog</h2>
+
+		<div class="card soft" id="hotdog">
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog " placeholder="Search">
+				</form>
+			</div>
+</div>
+	<h2 id="select">Select</h2>
+
+	<div class="card soft">
+		<div class="form-select">
+			<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>					
+		</div>
+	</div>
+	
+	<h2 id="checkboxes">Check Boxes</h2>
+
+			<div class="card soft">
+				<label>Label <input type="checkbox" id="input-1"> </label>
+				<label>Label <input type="checkbox" id="input-2"> </label>
+
+
+				<h3>Heart Checkbox</h3>
+				<div class="favorite">
+				<input type="checkbox" id="heart-example" class="hidden"> 
+				<label for="heart-example">&hearts;</label>
+				</div>
+			
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
