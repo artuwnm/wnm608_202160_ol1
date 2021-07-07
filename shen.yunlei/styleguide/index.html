@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../lib/CSS/styleguide.css">
 	<link rel="stylesheet" href="../lib/CSS/gridsystem.css">
 	<link rel="stylesheet" href="../CSS/storetheme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -36,12 +37,17 @@
 				<ul>
 					<li><a href="#typography">Typography</a></li>
 						<ul>
-						<li><a href="#headings">Headings</a></li>
-						<li><a href="#paragraphs">Paragraphs</a></li>
+							<li><a href="#headings">Headings</a></li>
+							<li><a href="#paragraphs">Paragraphs</a></li>
 						</ul>
-
 					<li><a href="#colorpalette">Color Palette</a></li>
 					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#toggle">Toggle</a></li>
+					<li><a href="#save">Save</a></li>
+					<li><a href="#forms">Forms</a></li>
+					<li><a href="#checkbox">Checkbox</a></li>
+					<li><a href="#searchbar">Search Bar</a></li>
+					<li><a href="#toasts">Toasts</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -112,10 +118,8 @@
 			<h2>Buttons</h2>
 
 			<div class="card soft buttons">
-
-				<div class="grid">
-						<div><h3>Try me!</h3></div>
-				</div>
+					<h3>Try me!</h3>
+				
 				<div class="grid">
 						<button class="default">Button</button>
 				</div>
@@ -136,15 +140,149 @@
 	</div>
 
 
-	<div class="container">
+	<div class="container" id="toggle">
 		<h2>Toggle</h2>
-		<div class="toggle">
+		<div class="toggle card soft">
 			<input type="checkbox" id="toggle-1" class="hidden">
 			<label for="toggle-1"></label>
 		</div>
 	</div>
 
-	
+	<div class="container" id="save">
+		<h2>Save</h2>
+		<div class="save card soft">
+			<input type="checkbox" id="save-1" class="hidden">
+			<label for="save-1">&hearts;</label>
+		</div>
+	</div>
 
+	<div class="container" id="forms">
+
+		<h2>Forms</h2>
+
+		<div class="card soft">
+			<form>
+				<div class="form-control">
+					<label class="form-label">Street address</label>
+					<input type="text" placeholder="Street address" class="form-input">
+				</div>
+				<div class="form-control">
+					<label class="form-label">Zip</label>
+					<input type="number" placeholder="Zip" class="form-input">
+				</div>
+				<div class="form-control">
+					<label class="form-label">City</label>
+					<input type="text" placeholder="City" class="form-input">
+				</div>
+				<div class="form-control">
+					<label class="form-label">State</label>
+					<div class="form-select">
+						<select>
+							<option value="">AL</option>
+							<option value="">AK</option>
+							<option value="">AS</option>
+							<option value="">AZ</option>
+							<option value="">AR</option>
+							<option value="">CA</option>
+							<option value="">CO</option>
+							<option value="">CT</option>
+							<option value="">DE</option>
+							<option value="">DC</option>
+							<option value="">FL</option>
+							<option value="">GA</option>
+							<option value="">GU</option>
+							<option value="">HI</option>
+							<option value="">ID</option>
+							<option value="">IL</option>
+							<option value="">IN</option>
+							<option value="">IA</option>
+							<option value="">KS</option>
+							<option value="">KY</option>
+							<option value="">LA</option>
+							<option value="">ME</option>
+							<option value="">MD</option>
+							<option value="">MA</option>
+							<option value="">MI</option>
+							<option value="">MN</option>
+							<option value="">MS</option>
+							<option value="">MO</option>
+							<option value="">MT</option>
+							<option value="">NE</option>
+							<option value="">NV</option>
+							<option value="">NH</option>
+							<option value="">NJ</option>
+							<option value="">NM</option>
+							<option value="">NY</option>
+							<option value="">ND</option>
+							<option value="">MP</option>
+							<option value="">OH</option>
+							<option value="">OK</option>
+							<option value="">OR</option>
+							<option value="">PA</option>
+							<option value="">PR</option>
+							<option value="">RI</option>
+							<option value="">SC</option>
+							<option value="">SD</option>
+							<option value="">TN</option>
+							<option value="">TX</option>
+							<option value="">TU</option>
+							<option value="">VT</option>
+							<option value="">VA</option>
+							<option value="">VI</option>
+							<option value="">WA</option>
+							<option value="">WV</option>
+							<option value="">WI</option>
+							<option value="">WY</option>
+						</select>
+					</div>
+				</div>
+			</form>	
+		</div>
+
+
+		<div class="container" id="checkbox">
+			<h2>Checkbox</h2>
+			<div class="card soft">
+				<div class="display-flex">
+					<label class="form-label flex-stretch" style="font-size: 1.25em;">Billing Address <input type="checkbox" id="input-1"></label>
+					<label class="flex-none" for="input-1">Use Shipping Address</label>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="contianer" id="searchbar">
+			<h2>Search Bar</h2>
+
+			<div class="form-control card soft">
+				<form class="search-bar">
+					<input action="search" placeholder="Title, author or ISBN">
+             		 <span><i class="fa fa-search"></i></span>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="contianer" id="toasts">
+			<h2>Toasts</h2>
+
+			<div class="card soft">
+				<div class="card hard display-flex">
+					<div class="toast toast-visible toast-success flex-stretch">Toast Notification!</div>
+					<div class="flex-stretch"></div>
+					<div class="toast toast-visible toast-error flex-stretch">Toast Notification!</div>
+				</div>	
+			
+					<p>Please type "Toast.show('Toast Notifications!', 'success');" or "Toast.show('Toast Notifications!', 'error');" in the Console to see the animation.</p>		
+			</div>
+		</div>
+			
+			
+		
+	</div>
+
+
+	
+	<script src="../lib/js/toast.js"></script>
 </body>
 </html>

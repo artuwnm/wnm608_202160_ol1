@@ -12,15 +12,15 @@ body{
 }
 
 
-.favorite label{
+.save label{
 	transition: all 0.3s;
 	display: inline-block;
 	transform: scale(1,1);
 	color: var(--color-neutral-medium);
 }
 
-.favorite input:checked + label{
-	color: red;
+.save input:checked + label{
+	color: #DB4D6D;
 	transform: scale(1.5,1.5);
 }
 
@@ -116,7 +116,6 @@ body{
 		padding: 0;
 	}
 }
-
 
 
 

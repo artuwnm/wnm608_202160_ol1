@@ -366,12 +366,12 @@ a:hover{
 }
 
 .hotdog.light{
-	background-color: var(--color-white;
+	background-color: var(--color-white);
 	color: var(--color-black);
 }
 
 
-.form-select>select{
+.form-select > select{
     padding: 0.5em 1em;
     background-color: var(--color-neutral-light);
     border-radius: 0.3em;
@@ -397,28 +397,33 @@ a:hover{
 
 
 /* TOGGLE */
-.toggle {
+.toggle label{
+	font-size: 1.3rem;
     display: inline-block;
-    width: 5em;
-    height: 2em;
+    width: 2em;
+    height: 1em;
     border: 0.1em solid var(--color-neutral-medium);
-    background-color: black;
-    border-radius: 2em;
-
+    background-color: var(--color-neutral-white);
+    border-radius: 1em;
+    position: relative;
 }
-/*
+
+
 .toggle label::after{
 	content: '';
 	display: inline-block;
-	width: 1em;
-	height: 1em;
+	width: 0.8em;
+	height: 0.8em;
 	border-radius: 1em;
 	position: absolute;
     background-color: var(--color-neutral-medium);
+    transition: all 0.3s;
 }
-*/
 
 
+.toggle input:checked + label::after{
+	transform: translateX(1em);
+}
 
 
 
