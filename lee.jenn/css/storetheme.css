@@ -1,10 +1,277 @@
 :root {
 	--color-offwhite: #f4f4f4;
+	--color-anchor: #0066CC;
+	--color-neutral-light: #F9F9F9;
+	--color-neutral-medium: #F4F4F4;
 }
-
 
 
 body {
-	background-color: #f4f4f4;
+	background-color: var(--color-offwhite);
 }
 
+
+/***********************************LANDING page***********************************/
+.cta-section {
+	height: 70vh;
+	background-image: url(../img/landing3.jpg);
+	background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: start;
+    padding-left: 4em;
+}
+
+.cta-section a {
+	font-weight: 400;
+}
+
+.cta-section a:hover {
+	text-decoration: none;
+}
+
+.promo {
+	width: auto;
+	overflow: hidden;
+	background-size: cover;
+    background-position: center;
+    height: 60vh;
+    text-align: center;
+    padding: 1em;
+}
+
+.promo-1 {
+	background-image: url(../img/promo1.jpg);
+}
+
+.promo-2 {
+	background-image: url(../img/promo2.jpg);
+}
+
+.promo-3 {
+	background-image: url(../img/promo3.jpg);
+}
+
+.promo-4 {
+	background-image: url(../img/promo4.jpg);
+}
+
+.promo .promo-anchor {
+	color: var(--color-anchor);
+}
+
+
+/***********************************ABOUT page***********************************/
+.about {
+	justify-content: center;
+	align-items: center;
+}
+
+.about p {
+	width: 80%;
+	padding: 1em;
+}
+
+.img-box img {
+	height: 50vh;
+	overflow: hidden;
+}
+
+
+
+
+
+/***********************************NAVIGATION ON TOP***********************************/
+nav.nav.nav-crumbs.crumbs-opt {
+    font-size: .75em;
+}
+
+
+
+
+/***********************************PRODUCT LIST***********************************/
+.product-list-title {
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+/***********************************PRODUCT ITEM***********************************/
+.pdp {
+	margin-top: 1em;
+	margin-bottom: 4em;
+}
+
+.pdp-quantity {
+    background-color: var(--color-neutral-light);
+    width: 50%;
+    border-radius: 2px;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+}
+
+.pdp-product-image {
+	width: 100%;
+	border-radius: 2px;
+    overflow: hidden;
+}
+
+.pdp-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 2em;
+}
+
+
+
+
+/***********************************CHECKOUT PAGE***********************************/
+.checkout {
+	margin-top: 1em;
+	margin-bottom: 4em;
+}
+
+.checkout-thumbnail-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.checkout-thumbnail-image img {
+	width: 100%;
+}
+
+.checkout-thumbnail-text {
+    margin-left: 2em;
+}
+
+.checkout-detail {
+	padding-left: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+}
+
+.checkout-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1em;
+    background-color: var(--color-neutral-light);
+}
+
+.btn-tertiary {
+    border: none;
+    background-color: transparent;
+    color: var(--color-anchor);
+    padding: 0;
+}
+
+.btn-tertiary:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.btn-checkout {
+
+}
+
+.btn-checkout:hover,
+.btn-payment:hover,
+.btn-to-home:hover {
+	text-decoration: none;
+}
+
+
+
+
+
+/***********************************PAYMENT PAGE***********************************/
+.payment {
+	margin-top: 1em;
+}
+
+.payment-detail {
+	padding: 1em;
+}
+
+.payment-button {
+	padding-left: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	background-color: var(--color-neutral-light);
+
+	display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+
+
+
+
+/***********************************CONFIRMATION PAGE***********************************/
+.confirm {
+	text-align: center;
+}
+
+
+a.link-to-admin {
+    display: block;
+    padding-top: 1em;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/***********************************ADMIN LIST PAGE***********************************/
+.admin-list,
+.admin-edit {
+	margin-top: 1em;
+}
+
+.admin-figure {
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+}
+
+
+.product-edit-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.admin-save-btn {
+	padding: 1em 5em;
+	margin-top: 1em;
+}
+
+.admin-save-btn:hover {
+
+}
+
+.admin-delete-btn {
+	border: none;
+	background-color: transparent;
+	color: var(--color-anchor);
+}
+
+.admin-delete-btn:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
