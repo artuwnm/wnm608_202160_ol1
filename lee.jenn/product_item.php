@@ -47,7 +47,7 @@
 					</div>	
 
 					<button class="button-style btn-primary">
-						<a href="checkout.php" class="button-style-none">Add to Cart</a>
+						<a href="checkout.php?id=<?=$_GET['id']; ?>" class="button-style-none">Add to Cart</a>
 					</button>	
 				</div>
 			</div>	

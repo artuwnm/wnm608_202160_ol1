@@ -29,7 +29,7 @@
 					<!-- thumbnail of product 60% -->
 					<div class="checkout-thumbnail-image">	
 						<a href="#">
-							<img src="img/1.jpg" alt="plant">
+							<img src="img/<?=$_GET['id']; ?>.jpg" alt="plant">
 						</a>
 					</div>
 
