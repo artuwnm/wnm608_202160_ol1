@@ -2,6 +2,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
+	<base href="http://yunleishen.net/elaine/aau/wnm608/shen.yunlei/">
 
 	<link rel="stylesheet" href="https://use.typekit.net/umv3skt.css">
 	<link rel="stylesheet" href="lib/CSS/style.css">

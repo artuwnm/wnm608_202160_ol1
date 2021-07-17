@@ -8,6 +8,9 @@
 <body>
 
 	<?php include "parts/navbar.php"; ?>
+
+
+	
 	<div class="container">
 		<h2>Edit Product</h2>
 

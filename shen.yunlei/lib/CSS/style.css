@@ -314,6 +314,11 @@ a:hover{
 		font-size: 2em;
 		margin: 0;
 	}
+		#logo:hover{
+			cursor: pointer;
+		}
+
+
 
 	.navbar ul{
 		list-style-type: none;
@@ -337,6 +342,18 @@ a:hover{
 		color: var(--color-neutral-dark);
 	}
 
+.nav-crumbs a{
+	display: inline-block;
+}
+.nav-crumbs .active a,
+.nav-crumbs a:hover{
+	background-color: transparent;
+	color: var(--color-green-medium);
+	text-decoration: underline;
+}
+.nav-crumbs li:not(:first-child)::before{
+	content: '<';
+}
 
 
 /* BUTTON */
@@ -523,20 +540,26 @@ button {
 
 
 .form-button{
-    background-color: var(--color-green-light);
+    background-color: var(--color-orange);
+    color: var(--color-orange-light);
     padding: 0.5em 1em;
     border-radius: 0.2em;
     cursor: pointer;
     text-align: center;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
 }
 
 .form-button:hover{
+	background-color: var(--color-orange-light);
+	color: var(--color-orange);
+	transform: scale(0.95);
 	text-decoration: none;
 }
 
 
 .form-button:active{
 	background-color: var(--color-orange);
+    color: var(--color-orange-light);
 }
 
 
