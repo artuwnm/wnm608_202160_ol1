@@ -616,7 +616,7 @@ a:hover {
 .form-button,
 .form-input,
 .form-item {
-		display: inline-block;
+	display: inline-block;
     background-color: transparent;
     border-width: 0;
     font-family: inherit;
@@ -886,6 +886,57 @@ a:hover {
 
 
 
+
+/*********************************ADMIN SIDE ONLY -JSON *********************************/
+input.form-button {
+    background-color: var(--color-secondary);
+    border-radius: 3px;
+    padding: 0.5em 6em;
+}
+
+input.form-button:hover {
+	cursor: pointer;
+	background-color: var(--color-secondary-dark);
+}
+
+.admin-delete,
+.admin-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-delete {
+	margin-top: 4em;
+	margin-bottom: 1.25em;
+}
+
+.admin-submit-btn {
+    padding: 0.5em 6em;
+    border: none;
+    background-color: var(--color-secondary);
+    border-radius: 3px;
+}
+
+.admin-submit-btn:hover,
+.admin-add-user-btn:hover {
+	background-color: var(--color-secondary-dark);
+	cursor: pointer;
+}
+
+
+.add-user {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.admin-add-user-btn {
+	background-color: var(--color-secondary);
+	padding: 0.5em 4em;
+    border: none;
+    border-radius: 3px;
+}
 
 
 /*********************************Grid*********************************/
