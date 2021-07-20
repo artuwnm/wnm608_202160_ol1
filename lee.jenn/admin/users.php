@@ -81,7 +81,7 @@ $display = <<<HTML
 
 	<div>
 		<strong>Classes</strong>
-		<span>$user->classes</span>
+		<span>$classes</span>
 	</div>
 </div>
 HTML;

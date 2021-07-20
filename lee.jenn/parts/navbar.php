@@ -1,7 +1,7 @@
 <header class="navbar">
 	<div class="container display-flex">
 		<div class="flex-none">
-			<h1>The Vine</h1>
+			<a href="index.php" class="header_logo">The Vine</a>
 		</div>
 		<div class="flex-stretch"></div>
 		<nav class="nav-flex flex-none nav">
