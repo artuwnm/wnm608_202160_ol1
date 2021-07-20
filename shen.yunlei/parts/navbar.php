@@ -30,7 +30,7 @@
 					<li><a href="about.php">About</a></li>
 					<li><a href="browse.php">Browse</a></li>
 					<li><a href="cart.php">Cart</a></li>
-					<li><a href="admin_login.php">Admin</a></li>
+					<li><a href="admin/user_admin.php">Admin</a></li>
 				</ul>
 			</div>
 		</div>

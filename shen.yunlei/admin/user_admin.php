@@ -5,7 +5,13 @@ include "../lib/php/functions.php";
 $filename = "../data/products.json";
 $products = file_get_json($filename);
 
-
+$empty_product = (object)[
+	"title" =>"",
+	"genres" =>"",
+	"author" =>"",
+	"price" =>"",
+	"QTY" =>""
+];
 
 
 
@@ -25,9 +31,24 @@ if (isset($_GET['action'])) {
 			break;
 
 		case "create":
+			$empty_product->title = $_POST['products-title'];
+			$empty_product->genres = $_POST['products-genres'];
+			$empty_product->author = $_POST['products-author'];
+			$empty_product->price = $_POST['products-price'];
+			$empty_product->QTY = $_POST['products-QTY'];
+
+			$id = count($products);
+
+			$products[] = $empty_product;
+
+			file_put_contents($filename,json_encode($products));
+			header("location:{$_SERVER['PHP_SELF']}?id=$id");
 			break;
 
 		case "delete":
+			array_splice($products,$_GET['id'],1);
+			file_put_contents($filename,json_encode($products));
+			header("location:{$_SERVER['PHP_SELF']}");
 			break;
 	}
 }
@@ -48,15 +69,36 @@ function showUserPage($products){
 
 $id = $_GET['id'];
 
-echo <<<HTML
-<nav class="nav card">
+$addoredit = $id == "new" ? "Add": "Edit";
+$createorupdate = $id == "new" ? "create": "update";
 
-	<ul>
-		<li class="nav-crumbs"><a href="admin/user_admin.php">Back</a></li>
-	</ul>
-</nav> 
+$display = <<<HTML
+	<div>
+	<h2>$products->title</h2>
+	<div>
+		<strong>Genres</strong>
+		<span>$products->genres</span>
+	</div>
+	<div>
+		<strong>Author</strong>
+		<span>$products->author</span>
+	</div>
+	<div>
+		<strong>Price</strong>
+		<span>$products->price</span>
+	</div>
+	<div>
+		<strong>QTY</strong>
+		<span>$products->QTY</span>
+	</div>
+</div>
+HTML;
+
+$form = <<<HTML
 	<div class="container card">
-		<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=update">
+		<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
+
+			<h2>$addoredit Product</h2>
 			<div class="form-control">
 				<label class="form-label" for="products-title">Title</label>
 				<input class="form-input" name="products-title" id="products-title" type="text" value="$products->title" placeholder="Enter a Book Title">
@@ -83,6 +125,25 @@ echo <<<HTML
 		</form>
 	</div>
 HTML;
+
+$output = $id == "new" ? $form:
+	"<div class='grid gap'>
+		<div class='col-xs-12 col-md-5'>$display</div>
+		<div class='col-xs-12 col-md-7'>$form</div>
+	</div>
+	";
+
+$delete = $id == "new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a>";
+
+
+echo <<<HTML
+	<nav class="display-flex">
+		<div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">Back</a></div>
+		<div class="flex-none">$delete</div>
+	</nav> 
+
+	$output
+HTML;
 }
 
 
@@ -102,13 +163,14 @@ HTML;
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1>User Admin</h1>
+				<h1 id="logo" onclick="location.href='index.php'">Bookworms</h1>
 			</div>
 			<div class="flex-stretch"></div>
 			<div class="flex-none">
 				<nav class="nav-flex flex-none">
 					<ul>
-						<li><a href="admin/user_admin.php">Book List</a></li>
+						<li><a href="<?= $_SERVER['PHP_SELF'] ?>">Book List</a></li>
+						<li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New Product</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -116,7 +178,9 @@ HTML;
 	</header>
 
 
-	
+	<div class="container">
+		<h2>User Admin page</h2>
+	</div>
 	<div class="container">
 
 		<div class="card soft">
@@ -124,11 +188,12 @@ HTML;
 			<?php 
 
 			if (isset($_GET['id'])) {
-				showUserPage($products[$_GET['id']]);
+				showUserPage($_GET['id'] == "new" ? $empty_product : $products[$_GET['id']]);
 			} else {
 
 			 ?>
-			<h2>Book List</h2>
+			
+			<h3>Book List</h3>
 
 			<nav class="nav">
 				<ul>
@@ -151,6 +216,8 @@ HTML;
 
 
 	</div>
+
+
 
 
 	

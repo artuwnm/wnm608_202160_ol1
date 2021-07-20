@@ -13,7 +13,7 @@
 			<h2>Cart</h2>
 
 
-
+<!-- 
 			<div class="grid gap">
 					<div class="card col-xs-12 book_checkout">
 						<figure class="figure product">
@@ -22,7 +22,7 @@
 							<figcaption class="card">
 								<div><a href="book_detail.php?id=1">Book Title</a></div>
 								<div>$10.00</div>
-								<a href="#">Delet</a>
+								<a href="">Delet</a>
 							</figcaption>
 					</div>
 					<div class="card col-xs-12 book_checkout">
@@ -32,7 +32,7 @@
 							<figcaption>
 								<div><a href="book_detail.php?id=2">Book Title</a></div>
 								<div>$10.00</div>
-								<a href="#">Delet</a>
+								<a href="">Delet</a>
 							</figcaption>
 					</div>
 					<div class="card col-xs-12 book_checkout">
@@ -42,7 +42,7 @@
 							<figcaption>
 								<div><a href="book_detail.php?id=3">Book Title</a></div>
 								<div>$10.00</div>
-								<a href="#">Delet</a>
+								<a href="">Delet</a>
 							</figcaption>
 					</div>
 					<div class="card col-xs-12 book_checkout">
@@ -52,10 +52,10 @@
 							<figcaption>
 								<div><a href="book_detail.php?id=4">Book Title</a></div>
 								<div>$10.00</div>
-								<a href="#">Delet</a>
+								<a href="">Delet</a>
 							</figcaption>
 					</div>
-				</div>
+				</div> -->
 
 
 			<script>

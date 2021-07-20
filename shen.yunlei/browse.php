@@ -13,7 +13,7 @@
 			<h2>Book List</h2>
 
 				<div class="grid gap">
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -24,7 +24,7 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -35,7 +35,7 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -46,7 +46,7 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -61,7 +61,7 @@
 
 
 				<div class="grid gap">
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -72,7 +72,7 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -83,7 +83,7 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -94,7 +94,7 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -109,7 +109,7 @@
 
 
 				<div class="grid gap">
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -120,7 +120,7 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -131,7 +131,7 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
@@ -142,7 +142,7 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="card col-xs-12 col-md-3">
+					<div class="col-xs-12 col-md-3">
 						<figure class="figure product">
 							<img src="img/hp-01.jpg" alt="">
 							<figcaption class="save">
