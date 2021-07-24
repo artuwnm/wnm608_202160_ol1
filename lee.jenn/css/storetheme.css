@@ -328,12 +328,11 @@ a.btn-primary.button-style {
 .payment-button {
 	padding: 2em;
 	background-color: var(--color-neutral-light);
-
-	/*display: flex;*/
 	text-align: center;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+}
+
+.btn-payment {
+    align-self: start;
 }
 
 a.btn-payment {

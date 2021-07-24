@@ -78,10 +78,8 @@
 
 				
 				<!-- payment button -->
-				<div class="payment-button flex-fourth">	
-					<div class="button-style btn-primary">
-						<a href="confirm.php" class="btn-payment">Purhcase</a>
-					</div>
+				<div class="payment-button flex-fourth display-flex">	
+						<a href="confirm.php" class="btn-payment button-style btn-primary flex-stretch">Purhcase</a>
 				</div>		
 			</div>
 
