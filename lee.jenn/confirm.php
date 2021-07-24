@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Product List</title>
+	<title>Confirmation</title>
 	<?php include "parts/meta.php"; ?>
 </head>
 
@@ -18,7 +18,7 @@
 				<h3>Thank you for shopping!</h3>
 				<br>
 				<button class="back-home button-style btn-secondary">
-					<a href="landing.php" class="btn-to-home">Back to Home</a>
+					<a href="index.php" class="btn-to-home">Back to Home</a>
 				</button>
 			</div>	
 

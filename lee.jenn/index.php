@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Product List</title>
+	<title>Landing Page</title>
 	<?php include "parts/meta.php"; ?>
 </head>
 
