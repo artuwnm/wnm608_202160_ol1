@@ -9,10 +9,12 @@
 	<?php include "parts/navbar.php"; ?>
 	
 	<div class="container">
-		<div class="card soft">
-			<h2>Check Out</h2>
-			<div class="container" id="forms">
-				<form>
+		<h2>Check Out</h2>
+			<div class="card soft">
+			<form class="from">
+			
+				<h2>Address</h2>
+				<div class="container" id="forms">
 					<div class="form-control">
 						<label class="form-label">Street address</label>
 						<input type="text" placeholder="Street address" class="form-input">
@@ -87,17 +89,55 @@
 							</select>
 						</div>
 					</div>
-				</form>	
-			</div>
+				</div>
+		
+
+			<h2>Payment</h2>
+				<div class="form-control">
+					<lable for="payment-name" class="form-label">Full Name</lable>
+					<input id="payment-name" type="text" placeholder="Name" class="form-input">
+				</div>
+				<div class="form-control">
+					<lable for="payment-number" class="form-label">Card Number</lable>
+					<input id="payment-number" type="text" placeholder="####-####-####-####" class="form-input">
+				</div>
+				<div class="form-control">
+					<div class="grid gap">
+						<div class="col-xs-12 col-md-6">
+							<lable for="payment-expiration" class="form-label">Expiration</lable>
+							<input id="payment-expiration" type="text" placeholder="MM-YY" class="form-input">
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<lable for="payment-CVV" class="form-label">CVV</lable>
+							<input id="payment-CVV" type="text" placeholder="CVV" class="form-input">
+						</div>
+					</div>
+				</div>
+				<div class="form-control">
+					<lable for="payment-zip" class="form-label">Zip Code</lable>
+					<input id="payment-zip" type="text" placeholder="Zip Code" class="form-input">
+				</div>
+					<div class="form-control">
+						<!-- <input type="submit" class="form-button" value="submit"> -->
+						<a href="comfirmation.php" class="form-button">Place Order</a>
+					</div>
+			</form>
 		</div>
+
 	</div>
 
-	<div class="container">
-		<button onclick="location.href = '#'">Place Order
-		</button>
-	</div>
 
 	<?php include "parts/footer.php" ?>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
