@@ -16,7 +16,7 @@
 	
 	<div class="container">
 		<div class="card soft">
-			<div class="add_to_cart">
+			<div class="align-text-center">
 				<h2 >You added " <?= $product->title ?> " to your cart</h2>
 			</div>
 			<div class="display-flex">

@@ -9,8 +9,8 @@
 	<?php include "parts/navbar.php"; ?>
 	
 	<div class="container">
-		<div class="card soft">
-			<h2>Thank you for your purchase</h2>
+		<div class="card soft align-text-center">
+			<h2>Order Successfuly Placed &#10003; </h2>
 			<p><a href="browse.php">Continue Shopping</a></p>
 		</div>
 	</div>
