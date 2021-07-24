@@ -16,7 +16,7 @@
 			<!-- back navigation -->
 			<nav class="nav nav-crumbs crumbs-opt">
 				<ul>
-					<li><a href="#">Back</a></li>
+					<li><a href="checkout.php">Back</a></li>
 				</ul>
 			</nav>
 
@@ -80,7 +80,7 @@
 				<!-- payment button -->
 				<div class="payment-button flex-fourth">	
 					<div class="button-style btn-primary">
-						<a href="confirm.php" class="btn-payment">Make Payment</a>
+						<a href="confirm.php" class="btn-payment">Purhcase</a>
 					</div>
 				</div>		
 			</div>

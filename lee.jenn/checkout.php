@@ -1,8 +1,16 @@
-<!DOCTYPE html>
+<?php 
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+$cart = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` IN (4, 7, 10)");
+
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Product List</title>
+	<title>Cart</title>
 	<?php include "parts/meta.php"; ?>
 </head>
 
@@ -16,57 +24,45 @@
 			<!-- back navigation -->
 			<nav class="nav nav-crumbs crumbs-opt">
 				<ul>
-					<li><a href="#">Back</a></li>
+					<li><a href="product_list.php">Back</a></li>
 				</ul>
 			</nav>
 
-			<!-- checkout details -->
-			<div class="checkout display-flex flex-wrap">
-				
-			<!-- checkout details -->
-				<div class="checkout-detail flex-sixth display-flex">	
-					
-					<!-- thumbnail of product 60% -->
-					<div class="checkout-thumbnail-image">	
-						<a href="#">
-							<img src="img/<?=$_GET['id']; ?>.jpg" alt="plant">
-						</a>
+			<div class="grid gap">
+			<!-- PRODUCT INSIDE CART  -->
+				<div class="col-xs-12 col-md-7 cart-item-details">
+					<div class="card card-room">
+						<?= array_reduce($cart, 'cartListTemplate') ?>
 					</div>
-
-					<div class="checkout-thumbnail-text">
-						<div class="checkout-thumbnail-text__title display-flex">	
-							<h4 class="product-name">Monstera</h4>
-							<h4 class="product-quantity">(1)</h4>
-						</div>
-
-						<button class="btn-tertiary">Delete</button>
-					</div>						
 				</div>
 
-				
-			<!-- checkout button section 40% -->
-				<div class="checkout-button flex-fourth">	
-					<h2>Total Amount</h2>
-					
+			<!-- DETAILS INSIDE CART -->
+				<div class="col-xs-12 col-md-5 cart-price-details">
+					<div class="card-section display-flex">
+						<div class="flex-stretch"><strong>Sub Total</strong></div>
+						<div class="flex-none">&dollar;120.00</div>
+					</div>
 					<hr size="1px" width="100%" color="#f1f1f1">
 
-					<h4>Subtotal:40.00</h4>
-					<h4>Tax: $4.20</h4>
-
+					<div class="card-section display-flex">
+						<div class="flex-stretch"><strong>Taxes</strong></div>
+						<div class="flex-none">&dollar;12.99</div>
+					</div>
 					<hr size="1px" width="100%" color="#f1f1f1">
 
-					<div class="total-amount display-flex">
-						<h3>Total</h3>	
-						<h3>$44.20</h3>
+					<div class="card-section display-flex">
+						<div class="flex-stretch"><strong>Total</strong></div>
+						<div class="flex-none">&dollar;132.99</div>
 					</div>
+					<hr size="1px" width="100%" color="#f1f1f1">
 
-					
-					<div class="button-style btn-primary">
-						<a href="payment.php" class="btn-checkout">Checkout</a>
+					<div class="card-section display-flex checkout-box">
+						<a href="payment.php" class="button-style btn-primary btn-checkout">Buy Now</a>
 					</div>
-				</div>		
-			
+				</div>
 			</div>
+
+			
 
 
 

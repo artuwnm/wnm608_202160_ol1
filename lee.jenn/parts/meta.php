@@ -12,3 +12,6 @@
 
 	<!-- favicon -->
 	<link rel="icon" href="img/cj_favicon.png" sizes="16x16">
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
