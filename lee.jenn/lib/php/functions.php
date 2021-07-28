@@ -1,5 +1,8 @@
 <?php 
 
+session_start();
+
+
 function print_p($v) {
 	echo "<pre>", print_r($v),"</pre>";
 }
@@ -38,3 +41,84 @@ function makeQuery($conn,$qry) {
 
 
 
+/*Cart functions*/
+function array_find($array,$fn) {
+	foreach($array as $o) if($fn($o)) return $o;
+	return false;
+}
+
+// this is for empty cart or no session.
+/*$isEmpty = $_SESSION['cart'];
+if(empty($isEmpty)){
+	echo "there is no session";
+}*/
+
+function getCart() {
+	
+	$a = $_SESSION['cart']['id'];
+
+	return isset($_SESSION['cart']) ? $_SESSION['cart'] : []; 	
+}
+
+
+function addToCart ($id,$amount,$size) {
+	//$_SESSION['cart'] = [];
+	$cart = getCart();
+
+	$p = array_find($cart,function($o) use($id) { return $o->id==$id; });
+
+	if($p) {
+		$p->amount += $amount;
+	} else {
+		$_SESSION['cart'][] = (object)[
+			"id"=>$id,
+			"amount"=>$amount,
+			"size"=>$size
+		];
+	}
+
+	
+}
+
+
+
+
+ 
+
+
+
+
+
+
+function resetCart() { $_SESSION['cart'] = []; }
+
+
+
+
+function cartItemById($id) {
+	return array_find(getCart(),function($o) use($id){return $o->id==$id;});
+}
+
+function makeCartBadge() {
+	$cart = getCart();
+	if(count($cart)==0) {
+		return "";
+	} else {
+		return "(".array_reduce($cart,function($r, $o){return $r+$o->amount;},0).")";
+	}
+}
+
+function getCartItems() {
+	$cart = getCart();
+	if(empty($cart)) return [];
+
+	$ids = implode(",",array_map(function($o){return $o->id;},$cart));
+	$data = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` IN ($ids)");
+
+	return array_map(function($o) use ($cart) {
+		$p = cartItemById($o->id);
+		$o->amount = $p->amount;
+		$o->total = $p->amount * $o->price;
+		return $o;
+	},$data);
+}

@@ -186,9 +186,17 @@ figure.figure.product:hover {
     margin-bottom: 2em;
 }
 
-.form-select {
+.form-select:last-child {
     margin-bottom: 3.5em;
 }
+
+.form-select.cart-select-btn {
+    padding: 0;
+    font-size: 0.8em;
+    margin-bottom: 2.5em;
+    width: 120%;
+}
+
 
 
 a.btn-primary.button-style {
@@ -313,8 +321,20 @@ a.btn-primary.button-style {
     margin-top: 3em;
 }
 
+.empty-state {
+    text-align: center;
+    padding-top: 5em;
+    color: var(--color-gray);
+}
 
+.state-hidden {
+    display: none;
+}
 
+.empty_cart {
+    text-align: center;
+    padding-top: 2em;
+}
 
 /***********************************PAYMENT PAGE***********************************/
 .payment {
@@ -345,6 +365,7 @@ a.btn-payment {
 /***********************************CONFIRMATION PAGE***********************************/
 .confirm {
 	text-align: center;
+    padding-bottom: 10em;
 }
 
 

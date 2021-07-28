@@ -3,8 +3,8 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-$cart = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` IN (4, 7, 10)");
-
+//$cart = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` IN (4, 7, 10)");
+$cart_items = getCartItems();
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -32,33 +32,19 @@ $cart = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` IN (4, 7, 10)
 			<!-- PRODUCT INSIDE CART  -->
 				<div class="col-xs-12 col-md-7 cart-item-details">
 					<div class="card card-room">
-						<?= array_reduce($cart, 'cartListTemplate') ?>
+						<?
+						if(count($cart_items)) {
+							echo array_reduce($cart_items, 'cartListTemplate'); 
+						} else {
+							echo "<div class='empty_cart'><p>There's no Item in your Cart 😮</p> <a href='product_list.php'>Shop Now</a></div>";
+						}
+						?>
 					</div>
 				</div>
 
 			<!-- DETAILS INSIDE CART -->
 				<div class="col-xs-12 col-md-5 cart-price-details">
-					<div class="card-section display-flex">
-						<div class="flex-stretch"><strong>Sub Total</strong></div>
-						<div class="flex-none">&dollar;120.00</div>
-					</div>
-					<hr size="1px" width="100%" color="#f1f1f1">
-
-					<div class="card-section display-flex">
-						<div class="flex-stretch"><strong>Taxes</strong></div>
-						<div class="flex-none">&dollar;12.99</div>
-					</div>
-					<hr size="1px" width="100%" color="#f1f1f1">
-
-					<div class="card-section display-flex">
-						<div class="flex-stretch"><strong>Total</strong></div>
-						<div class="flex-none">&dollar;132.99</div>
-					</div>
-					<hr size="1px" width="100%" color="#f1f1f1">
-
-					<div class="card-section display-flex checkout-box">
-						<a href="payment.php" class="button-style btn-primary btn-checkout">Buy Now</a>
-					</div>
+					<?= cartTotals() ?>
 				</div>
 			</div>
 

@@ -637,6 +637,21 @@ a:hover {
     outline: none;
 }
 
+.form-button-delete {
+	background-color: var(--color-neutral-medium);
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    padding: 0.25em .35em;
+}
+
+.form-button-delete.inline {
+	width: initial;
+}
+.form-button:hover {
+	text-decoration: none;
+}
 
 
 .form-input {

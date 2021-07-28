@@ -1,3 +1,9 @@
+<?php 
+
+include_once "lib/php/functions.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,7 +85,7 @@
 				
 				<!-- payment button -->
 				<div class="payment-button flex-fourth display-flex">	
-						<a href="confirm.php" class="btn-payment button-style btn-primary flex-stretch">Purhcase</a>
+						<a href="confirm.php" class="btn-payment button-style btn-primary flex-stretch">Purchase</a>
 				</div>		
 			</div>
 
