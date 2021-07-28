@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php 
+
+include_once 'lib/php/functions.php';
+reSetCart();
+ ?>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Comfirmation</title>
@@ -11,7 +16,7 @@
 	<div class="container">
 		<div class="card soft align-text-center">
 			<h2>Order Successfuly Placed &#10003; </h2>
-			<p><a href="browse.php">Continue Shopping</a></p>
+			<p><a href="shop.php">Continue Shopping</a></p>
 		</div>
 	</div>
 

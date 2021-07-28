@@ -264,6 +264,18 @@ a:hover{
 	text-align: center;
 }
 
+span.badge:not(:empty)::after{
+	content:')' ;
+
+}
+
+span.badge:not(:empty)::before{
+	content:'(' ;
+
+}
+
+
+
 /* COMPONENT CLASSES */
 
 .nav ul{
@@ -583,7 +595,9 @@ button {
     color: var(--color-orange-light);
 }
 
-
+.form-button.inline{
+	width: initial;
+}
 .search-bar{
 	background: var(--color-green-light);
 	color: var(--color-green);
