@@ -97,6 +97,56 @@ nav.nav.nav-crumbs.crumbs-opt {
 
 
 /***********************************PRODUCT LIST***********************************/
+form#product-search {
+    background-color: #f0f0f0;
+    border-radius: 2em;
+    display: flex;
+}
+
+.hotdog-1 {
+    display: flex;
+    align-items: center;
+}
+
+.fa-search {
+    color: #777;
+    padding-left: .5em;
+}
+
+.fa, .fas {
+    font-weight: 700;
+    font-size: .85em;
+}
+
+
+.filter-button {
+    background-color: var(--color-neutral-medium);
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    padding: .75em 1em;
+    margin-right: 1em;
+}
+
+.filter-button:hover {
+    background-color: #EDEDED;
+}
+
+.filternsort {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.filternsort .sort {
+    margin-bottom: 0;
+}
+.form-select.sort {
+    margin-bottom: 0;
+}
+
+
+
 .product-list-title {
 	justify-content: space-between;
 	align-items: center;
@@ -186,7 +236,7 @@ figure.figure.product:hover {
     margin-bottom: 2em;
 }
 
-.form-select:last-child {
+.size-options {
     margin-bottom: 3.5em;
 }
 
@@ -539,6 +589,13 @@ a.link-to-admin {
   .button-style a {
   	font-size: .85em;
   }
+
+  .filternsort {
+    flex-direction: column;
+  }
+
+  .form-select.sort {
+    margin-top: 1em;
 }
 
 

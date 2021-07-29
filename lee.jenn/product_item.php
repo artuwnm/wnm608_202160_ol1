@@ -86,7 +86,7 @@ $image_elements = array_reduce($images, function($r, $o) {
 
 						<h3>Product Size</h3>
 						
-						<div class="form-select">	
+						<div class="form-select size-options">	
 							<select id="product-size" name="product-size">
 								<option>small</option>
 								<option>large</option>

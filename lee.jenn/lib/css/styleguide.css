@@ -73,7 +73,9 @@ a:hover {
 	text-decoration: none;
 }
 
-
+.nav {
+	
+}
 
 
 
@@ -795,7 +797,10 @@ a:hover {
 
 /*************************SELECT******************************/
 .form-select {
-		padding: 0.5em 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 1em;
+	padding-left: .5em;
     background-color: var(--color-neutral-medium);
     border-radius: 0.3em;
     cursor: pointer;
@@ -813,7 +818,7 @@ a:hover {
 	font-size: 1.25em;
 	position: absolute;
 	top: 50%;
-	right: 1em;
+	right: .5em;
 	transform: translateY(-50%);
 	color: var(--color-gray);
 }
