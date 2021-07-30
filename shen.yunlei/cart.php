@@ -19,6 +19,7 @@
 	
 	<div class="container">
 		<h2>Cart</h2>
+
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">

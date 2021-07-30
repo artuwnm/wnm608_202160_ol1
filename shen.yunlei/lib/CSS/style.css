@@ -376,6 +376,7 @@ span.badge:not(:empty)::before{
 
 /* BUTTON */
 
+.shop-button,
 button {
 	width: 180px;
 	height: 40px;
@@ -388,6 +389,7 @@ button {
 	font-weight: 700;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+	.shop-button,
 	button:hover{
 		cursor: pointer;
 		background-color: var(--color-green-light);
@@ -395,13 +397,29 @@ button {
 		transform: scale(1.05);
 		transition: 0.3s;
 	}
-	
+	.shop-button,
 	button:active{
 		background-color: var(--color-green);
 		color: var(--color-neutral-light);
 		transform: scale(1);
 	}
 
+
+.shop-button a{
+	color: var(--color-neutral-light);
+}
+.shop-button a: hover{
+	color: var(--color-green);
+}
+
+.shop-button{
+	
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 42%;
+
+}
 
 
 /* CARD */
@@ -449,7 +467,7 @@ button {
 
 
 .view-window{
-	height: 100vh;
+	height: 75vh;
 	position: relative;
 	overflow: hidden;
 	background-size: cover;
@@ -532,10 +550,13 @@ button {
 
 /* FORMS */
 
+
+
 .form-control{
 	margin: 1em 0;
 }
 
+.filter-button
 .form-select > select,
 .search-bar input,
 .search-bar,
@@ -571,8 +592,22 @@ button {
     width: 100%;
 }
 
+.filter-button{
+	width: 100px;
+	height: 30px;
+	font-size: 1em;
+	font-weight: 400;
+	margin-right: 0.8em;
+    background-color: var(--color-green-light);
+    color: var(--color-green);
+    border-radius: 0.2em;
+    cursor: pointer;
+    text-align: center;
+}
+
 
 .form-button{
+	margin-right: 0.8em;
     background-color: var(--color-orange);
     color: var(--color-orange-light);
     padding: 0.5em 1em;
@@ -716,7 +751,7 @@ footer p{
 	font-size: 1em;
 	font-family: var(--font-sans);
 	font-weight: 400;
-	margin: 0;
+	margin-top: 5%;
 	padding: 1em;
 	text-align: center;
 }
