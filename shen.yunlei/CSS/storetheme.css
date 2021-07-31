@@ -69,6 +69,7 @@ body{
 }
 
 .product-overlay{
+	border-radius: 0.5em;
 	position: relative;
 	overflow: hidden;
 }
@@ -91,9 +92,7 @@ body{
 }
 
 .product-overlay .caption-body{
-	background-color: white;
-	border-radius: 0.5em;
-	padding: 1em;
+	color: var(--color-neutral-light);
 	transform: translateY(2em);
 	transition: all 0.3s;
 }

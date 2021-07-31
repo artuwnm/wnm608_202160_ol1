@@ -264,6 +264,8 @@ a:hover{
 	text-align: center;
 }
 
+
+
 span.badge:not(:empty)::after{
 	content:')' ;
 

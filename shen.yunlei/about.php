@@ -9,15 +9,18 @@
 	<?php include "parts/navbar.php"; ?>
 	
 	<div class="container">
-		<div class="card soft">
-			<h2>About</h2>
-			<p>
-				<span>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Quo, ea, dolorum. Architecto deleniti non fuga ut, tempore praesentium accusantium consequatur vero adipisci, laborum, consectetur ipsam illum debitis saepe nemo natus.</span>
-				<span>Saepe debitis corrupti suscipit reiciendis iste maiores et. Nihil magni sit temporibus, reprehenderit voluptatum ea laborum corrupti similique, quam dicta, eum assumenda vitae eaque, nulla. Ipsa tempore odit alias, suscipit.</span>
-				<span>Aperiam deserunt saepe numquam quidem odio cum accusamus. Ipsum ipsa nihil facere optio vitae, neque vel, cumque doloribus? Reprehenderit odit, doloremque animi facere commodi natus labore perferendis voluptatibus quas non!</span>
-			</p>
-			
+		
+		<h2>Welcome to Bookworms!</h2>
+		
+		<div class="bgimg">
+			<img src="img/about.jpeg" alt="">
 		</div>
+		<div>
+			<p style="text-align:left;">We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers, where we discover new writers, where children get hooked on the thrill of reading that can last a lifetime. They’re also anchors for our downtowns and communities.</p>
+			<p style="text-align:left;">As more and more people buy their books online, we wanted to create an easy, convenient way for you to get your books and support bookstores at the same time.</p>
+			<p style="text-align:left;">We hope that Bookworms can help strengthen the fragile ecosystem and margins around bookselling and keep local bookstores an integral part of our culture and communities.</p>
+		</div>
+
 	</div>
 
 

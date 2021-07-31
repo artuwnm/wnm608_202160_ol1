@@ -18,7 +18,7 @@ switch($data->type){
 	case "products_3":
 		$output['result'] = makeQuery(makeConn(),"SELECT * 
 			FROM `products` 
-			ORDER BY `date_create` ASC 
+			ORDER BY `date_create` DESC 
 			LIMIT 3");
 		break;
 

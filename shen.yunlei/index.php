@@ -28,8 +28,8 @@
 	</div>
 
 	<div class="container">
-		<h2 style="text-align: center; margin: 5%;">Best seller of the week</h2>
-		<div class='best-seller grid gap'></div>
+		<h2>Best seller of the week</h2>
+		<div class='best-seller grid gap container'></div>
 	</div>
 
 
