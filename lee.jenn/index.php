@@ -1,6 +1,7 @@
 <?php 
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -52,6 +53,7 @@ include_once "lib/php/functions.php";
 					<!-- bg-img in css -->
 				</div>
 			</div>
+
 
 			<!-- include footer here -->
 			<?php include "parts/footer.php"; ?>

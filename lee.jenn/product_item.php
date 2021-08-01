@@ -1,6 +1,7 @@
 <?php 
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 $product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` = ".$_GET['id'])[0];
 
@@ -106,54 +107,15 @@ $image_elements = array_reduce($images, function($r, $o) {
 		<!-- RECOMMENDED PRODUCTS START -->
 
 	<!-- recommended products here -->
-			<h3>Other Products You Might Like</h3>
-			<div class="grid gap">
-				<!-- recommend product1 -->
-					<div class="col-xs-12 col-md-4">
-						<figure class="figure product">
-						<!-- dynamically change image here - recommendation image	 -->
-							<a href="product_item.php?id=5">
-								<img src="img/alsobia.jpg" alt="plant">
-							</a>
-
-							<figcaption>
-								<div>Alosobia</div>
-								<div><strong>&dollar;30.00</strong></div>
-							</figcaption>
-						</figure>
-					</div>
-				
-
-				<!-- recommend product2 -->
-					<div class="col-xs-12 col-md-4">
-						<figure class="figure product">
-							<!-- dynamically change image here - recommendation image	 -->
-							<a href="product_item.php?id=4">
-								<img src="img/alocasia.jpg" alt="plant">
-							</a>
-
-							<figcaption>
-								<div>Alocasia</div>
-								<div><strong>&dollar;80.00</strong></div>
-							</figcaption>
-						</figure>
-					</div>
-					
-
-				<!-- recommend product3 -->
-					<div class="col-xs-12 col-md-4">
-						<figure class="figure product">
-							<!-- dynamically change image here - recommendation image	 -->
-							<a href="product_item.php?id=12">
-								<img src="img/saguaro.jpg" alt="">
-							</a>
-
-							<figcaption>
-								<div>Saguaro</div>
-								<div><strong>&dollar;30.00</strong></div>
-							</figcaption>
-						</figure>
-					</div>
+		
+			<div class="container">
+				<h3>Other Products You Might Like</h3>
+					<?php recommendedSimilar($product->category,$product->id); ?>
+				<h3>Browse More</h3>
+				<h6>Latest Plant Collections</h6>
+					<?php recommendedCategory("leaf"); ?>
+				<h6>Latest Cactus Collections</h6>
+					<?php recommendedCategory("cactus"); ?>
 			</div>
 <!-- RECOMMENDED PRODUCTS END -->
 
