@@ -1,6 +1,7 @@
 <?php 
 		
 	include_once "lib/php/functions.php";
+	include_once "parts/templates.php";
 	$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
 	$images = explode(",", $product->images);
@@ -94,6 +95,10 @@
 				</form>
 			</div>
 		</div>
+
+
+		<h2>Books you may like</h2>
+		<?php recommendedSimilar($product->genre,$products->id); ?>
 
 
 		

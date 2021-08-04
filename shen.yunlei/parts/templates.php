@@ -99,11 +99,30 @@ HTML;
 
 
 
+function recommendedProducts($a){
+	$products = array_reduce($a,'bookListTemplate');
+
+echo <<<HTML
+	<div class="grid gap productlist">
+		$products
+	</div>
+HTML;
+}
 
 
 
+function  recommendedGenre($genre,$limit=3){
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `genre`='$genre' ORDER BY `date_create` DESC LIMIT $limit");
+
+	recommendedProducts($result);
+}
 
 
+function  recommendedSimilar($genre,$id=0,$limit=3){
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `genre`='$genre' AND `id`<>'$id' ORDER BY rand() LIMIT $limit");
+
+	recommendedProducts($result);
+}
 
 
 

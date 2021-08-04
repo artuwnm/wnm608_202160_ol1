@@ -37,7 +37,7 @@ include_once 'lib/php/functions.php';
 							<span>Cart</span>
 							<span class="badge"><?= makeCartBadge(); ?></span>
 						</a></li>
-					<li><a href="admin/user_admin.php">Admin</a></li>
+					<li><a href="admin/index.php">Admin only</a></li>
 				</ul>
 			</div>
 		</div>

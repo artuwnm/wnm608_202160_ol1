@@ -30,9 +30,12 @@
 	<div class="container">
 		<h2>Best seller of the week</h2>
 		<div class='best-seller grid gap container'></div>
+	
+		<h2>Latest Fiction</h2>
+		<?php recommendedGenre("Fiction");?>
+		<h2>Latest Mystery</h2>
+		<?php recommendedGenre("Mystery");?>
 	</div>
-
-
 
 
 	<?php include "parts/footer.php" ?>
