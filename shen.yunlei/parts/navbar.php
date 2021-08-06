@@ -21,16 +21,18 @@ include_once 'lib/php/functions.php';
 		`);
 	}
 </script>
+
 <header class="navbar">
-		<div class="container display-flex">
+		<div class="container display-flex flex-wrap">
 			<div class="flex-none">
 				<h1 id="logo" onclick="location.href='index.php'">Bookworms</h1>
 			</div>
 
+
 			<div class="flex-stretch"></div>
 
 			<div class="flex-none nav-flex">
-				<ul class="container">
+				<ul>
 					<li><a href="about.php">About</a></li>
 					<li><a href="shop.php">Shop</a></li>
 					<li><a href="cart.php">

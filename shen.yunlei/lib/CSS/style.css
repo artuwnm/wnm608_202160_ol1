@@ -20,62 +20,6 @@
   --header-height: 4rem;
 	--spacing: 1rem;
 
-	/* Typefaces */
-
-	/* Mrs Eveas
-	font-family: mrs-eaves,serif;
-	font-weight: 700;
-	font-style: italic;
-
-	font-family: mrs-eaves,serif;
-	font-weight: 400;
-	font-style: normal;
-
-	font-family: mrs-eaves,serif;
-	font-weight: 700;
-	font-style: normal;
-
-	font-family: mrs-eaves,serif;
-	font-weight: 400;
-	font-style: italic;
-
-	font-family: mrs-eaves-roman-lining,sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	*/
-
-	/* Mr Eveas
-	font-family: mr-eaves-modern,sans-serif;
-	font-weight: 400;
-	font-style: normal;
-
-	font-family: mr-eaves-modern,sans-serif;
-	font-weight: 700;
-	font-style: italic;
-
-	font-family: mr-eaves-modern,sans-serif;
-	font-weight: 700;
-	font-style: normal;
-
-	font-family: mr-eaves-modern,sans-serif;
-	font-weight: 400;
-	font-style: italic;
-
-	font-family: mr-eaves-sans,sans-serif;
-	font-weight: 400;
-	font-style: normal;
-
-	font-family: mr-eaves-sans,sans-serif;
-	font-weight: 700;
-	font-style: normal;
-
-	font-family: mr-eaves-sans,sans-serif;
-	font-weight: 700;
-	font-style: italic;
-	 */
-
-
-
 
 	--font-serif: mrs-eaves, Garamond ,serif;
 	--font-sans: mr-eaves-sans, Helvetica,sans-serif;
@@ -253,7 +197,7 @@ a:hover{
 .flex-justify-center{ justify-content: center; }
 
 .flex-column{flex-direction: column;}
-
+.flex-wrap{flex-wrap: wrap;}
 /* Small Classes */
 
 .bgimg img{
@@ -298,6 +242,7 @@ span.badge:not(:empty)::before{
 		font-family: var(--font-sans);
 		color: var(--color-neutral-light);
 		padding: 0 0.5em;
+		margin-bottom: 1em;
 	}
 	.nav a:hover{
 		background-color: var(--color-green-light);
@@ -309,6 +254,10 @@ span.badge:not(:empty)::before{
 		background-color: var(--color-green);
 		border-radius: 4em;
 		color: var(--color-neutral-light);
+	}
+
+	.flush>.navbar{
+		margin-bottom: 0;
 	}
 
 
@@ -424,6 +373,8 @@ button {
 }
 
 
+
+
 /* CARD */
 
 .card{
@@ -452,6 +403,11 @@ button {
 
 	.card.flat{
 		padding: 0;
+	}
+
+	[class*='col-']>.card{
+		height: 100%;
+		margin: 0;
 	}
 
 

@@ -88,9 +88,6 @@ function cartTotals(){
 		<div class="flex-stretch"><strong>Total</strong></div>
 		<div class="flex-none">&dollar;$taxedfixed</div>
 	</div>
-	<div class="card-section">
-		<a href="check_out.php" class="form-button">Check Out</a>
-	</div>
 
 
 HTML;
@@ -110,6 +107,13 @@ HTML;
 }
 
 
+
+
+function  recommendedAnything($limit=3){
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY rand() DESC LIMIT $limit");
+
+	recommendedProducts($result);
+}
 
 function  recommendedGenre($genre,$limit=3){
 	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `genre`='$genre' ORDER BY `date_create` DESC LIMIT $limit");

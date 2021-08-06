@@ -15,7 +15,7 @@
 	<script src="js/best_seller.js"></script>
 
 </head>
-<body>
+<body class="flush">
 
 	<?php include "parts/navbar.php"; ?>
 
