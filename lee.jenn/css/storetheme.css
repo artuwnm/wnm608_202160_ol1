@@ -24,9 +24,6 @@ body {
 }
 
 
-
-
-
 .cta-section a {
 	font-weight: 400;
 }
@@ -278,6 +275,20 @@ a.btn-primary.button-style {
 
 
 /***********************************CHECKOUT PAGE***********************************/
+.shipping-info {
+    padding: 1em;
+}
+
+.btn-pay {
+    margin-top: 5em;
+}
+
+.summary-style {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+}
+
 .checkout {
 	margin-top: 1em;
 	margin-bottom: 4em;
@@ -477,6 +488,10 @@ a.link-to-admin {
 
 
 
+.menu-button label {
+    display:  none;
+}
+
 /***********************************MEDIA QUERIES (LANDING PAGE)***********************************/
 /*Breakpoint: 800px*/
 @media only screen and (max-width: 50em) {
@@ -533,16 +548,17 @@ a.link-to-admin {
 
   .img-box {
 	text-align: center;	
+    margin-top: 1.25em;
   }
 
   .img-box img {
   	background-position: right;
-  	width: 60%;
+  	width: 100%;
   	height: auto;
   }
 
   .about p {
-    width: 70%;
+    width: 100%;
     padding: 1em;
     font-size: .8em;
    }
@@ -596,6 +612,32 @@ a.link-to-admin {
 
   .form-select.sort {
     margin-top: 1em;
+  }
+
+/*hamburger menu for smaller width screen*/
+  .navbar .display-flex {
+    flex-wrap: wrap;
+  }
+
+  .navbar .nav {
+    width: 100%;
+    display: none;
+  }
+
+  .navbar .nav-flex ul {
+    display: block;
+  }
+
+  .menu-button label {
+    display: block;
+    padding: 0 .75em;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  #menu:checked+.navbar .nav {
+    display: block;
+  }
 }
 
 
@@ -603,6 +645,10 @@ a.link-to-admin {
 @media only screen and (max-width: 34.375em) {
   .cart-price-details {
     border-left: none;
+  }
+
+  .no-padding {
+    padding-left: 0;
   }
 
   .payment {
@@ -614,6 +660,8 @@ a.link-to-admin {
   }
 
 
+
+
 }
 
 
@@ -623,6 +671,10 @@ a.link-to-admin {
 @media only screen and (max-width: 31.25em) {
   .cta-section {
     height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.45)), url(../img/landing3.jpg);
+    padding: 1em;
   }
 
   .cta-h1 {
@@ -633,6 +685,10 @@ a.link-to-admin {
   	padding: 0.65em 1.75em;
   }
 
+  .btn-shop-now {
+    margin-top: 1em;
+  }
+
   .promo {
   	height: 40vh;
   }
@@ -641,4 +697,16 @@ a.link-to-admin {
   	background-position: center;
   }
 
+
+
 }
+
+
+/*Breakpoint: 400px*/
+@media only screen and (max-width: 25em) {
+.container.display-flex.navigation {
+    display: flex;
+}
+
+}
+

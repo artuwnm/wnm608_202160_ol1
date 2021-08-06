@@ -1,15 +1,21 @@
 <?php 
-
 include_once "lib/php/functions.php"
-
 ?>
 
+<input type="checkbox" id="menu" class="hidden">
+
 <header class="navbar">
-	<div class="container display-flex">
-		<div class="flex-none">
+	<div class="container display-flex navigation">
+		<div class="flex-none header_container">
 			<a href="index.php" class="header_logo">The Vine</a>
 		</div>
-		<div class="flex-stretch"></div>
+		<div class="flex-stretch emptybox"></div>
+		
+		<!-- hamburger menu -->
+		<div class="flex-none menu-button">
+			<label for="menu">&equiv;</label>
+		</div>
+
 		<nav class="nav-flex flex-none nav">
 			<ul>
 				<li><a href="index.php">Home</a></li>

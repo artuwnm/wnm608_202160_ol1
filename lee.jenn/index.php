@@ -22,7 +22,7 @@ include_once "parts/templates.php";
 			<!-- content goes here -->
 			<div class="cta-section display-flex flex-direction-col">
 				<h1 class="cta-h1">Potted Plants for Every Occasion, <br> Delivered to Your Doorstep.</h1>
-				<button class="button-style btn-primary">
+				<button class="button-style btn-primary btn-shop-now">
 					<a href="product_list.php">Shop Now</a>
 				</button>
 			</div>

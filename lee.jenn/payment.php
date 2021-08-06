@@ -1,10 +1,9 @@
 <?php 
-
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+$cart = getCartItems();
 
-?>
-
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -27,13 +26,11 @@ include_once "lib/php/functions.php";
 			</nav>
 
 			<!-- payment -->
-			<div class="payment display-flex flex-wrap">
-				
 				<!-- payment details -->
-				<div class="payment-detail flex-sixth">	
-					<!-- form goes here -->
+			<div class="grid grid-gap">
+				<div class="col-xs-12 col-md-7 shipping-info">	
 					<form action="">
-	<!-- Shipping information form -->
+						<!-- Shipping information form -->
 						<h3>Shipping Information</h3>
 						<div class="form-control">
 							<label for="" class="form-label">Street Address</label>
@@ -52,15 +49,12 @@ include_once "lib/php/functions.php";
 							</div>	
 						</div>
 
-
 						<div class="form-control">
 							<label for="" class="form-label">Postal Code</label>
 							<input type="number" placeholder="Postal Code" class="form-input">
 						</div>
 
-
-
-	<!-- Payment information form -->
+						<!-- Payment information form -->
 						<h3>Payment Information</h3>
 						<div class="form-control">
 							<label for="" class="form-label">Card Number</label>
@@ -77,20 +71,41 @@ include_once "lib/php/functions.php";
 								<label for="" class="form-label">CVV</label>
 								<input type="text" placeholder="CVV" class="form-input">
 							</div>	
-						</div>
-					
+						</div>			
 					</form>
 				</div>
 
+
+				<!-- the other half -->
+				<div class="col-xs-12 col-md-5 cart-price-details no-padding">	
+					<div class="card card-room">
+						<h3>Summary</h3>
+						<div class="card-section">
+							<?php 
+							echo array_reduce($cart, function($r,$o){
+							$totalfixed = number_format($o->total,2,'.','');
+							return $r."<div class='display-flex'>
+								<div class='flex-stretch'>$o->product_name</div>
+								<div class='flex-none'>&dollar;$totalfixed</div>
+							</div>";
+						}) ?>
+						</div>
+						<hr size="1px" width="100%" color="#f1f1f1">
+						<?= cartTotals(); ?>
+
+						<div class="btn-pay">
+							<a href="confirm.php" class="btn-payment button-style btn-primary flex-stretch">
+							Purchase</a>
+						</div>
+						
+					</div>
+				</div>	
+			</div>	
+
 				
-				<!-- payment button -->
-				<div class="payment-button flex-fourth display-flex">	
-						<a href="confirm.php" class="btn-payment button-style btn-primary flex-stretch">Purchase</a>
-				</div>		
+					
 			</div>
 
-
-		</div>
 
 	</div>
 	<?php include "parts/footer.php"; ?>
