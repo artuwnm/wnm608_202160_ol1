@@ -2,9 +2,9 @@
 
 ## Relevant Links
 - http://yunleishen.net
-- http://yunleishen.net/aau/wnm608/shen.yunlei
-- http://yunleishen.net/aau/wnm608/shen.yunlei/styleguide
-- http://yunleishen.net/elaine/aau/wnm608/shen.yunlei/admin/admin
+- http://yunleishen.net/elaine/aau/wnm608/shen.yunlei/index.php
+- http://yunleishen.net/elaine/aau/wnm608/shen.yunlei/styleguide
+- http://yunleishen.net/elaine/aau/wnm608/shen.yunlei/admin
 
 
 ## Extra Links
