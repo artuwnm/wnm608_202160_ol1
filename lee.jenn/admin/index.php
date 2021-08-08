@@ -180,8 +180,8 @@ $form = <<<HTML
 		</div>
 
 
-		<div class="form-control">
-			<input type="submit" value="Save Changes" class="form-button">
+		<div class="form-control save-change-container">
+			<input type="submit" value="Save Changes" class="form-button save-change-btn">
 		</div>
 	</form> 
 HTML;

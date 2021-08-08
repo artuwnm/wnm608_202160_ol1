@@ -443,6 +443,16 @@ a.link-to-admin {
 
 
 /***********************************ADMIN LIST PAGE***********************************/
+.save-change-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+input.form-button.save-change-btn {
+    padding: .75em 3em;
+}
+
+
 .admin-list,
 .admin-edit {
 	margin-top: 1em;
@@ -468,6 +478,8 @@ a.link-to-admin {
 	padding: 1em 5em;
 	margin-top: 1em;
 }
+
+
 
 .admin-save-btn:hover {
 
