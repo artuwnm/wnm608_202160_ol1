@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Jenn Lee",
+		"type": "Student",
+		"email": "jlee332@academyart.edu",
+		"classes": [608]
+	},
+	{
+		"name": "Phoebe Buffay",
+		"type": "Singer",
+		"email": "Phoebe@earthlink.net",
+		"classes": [608, 601, 607]
+	},
+	{
+		"name": "Joey Tribbiani",
+		"type": "Actor",
+		"email": "joeytribs@aol.com",
+		"classes": [608]
+	},
+	{
+		"name": "Chandler Bing",
+		"type": "Who Knows",
+		"email": "bingtastic@yahoo.com",
+		"classes": [608]
+	},
+	{
+		"name": "Monica Gellar",
+		"type": "Chef",
+		"email": "mgellar1973@hotmail.com",
+		"classes": [608]
+	},
+	{
+		"name": "Ross Gellar",
+		"type": "Professor",
+		"email": "rGeller@hotmail.com",
+		"classes": [608]
+	}
+]
