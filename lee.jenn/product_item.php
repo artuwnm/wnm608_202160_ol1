@@ -111,11 +111,7 @@ $image_elements = array_reduce($images, function($r, $o) {
 			<div class="container">
 				<h3>Other Products You Might Like</h3>
 					<?php recommendedSimilar($product->category,$product->id); ?>
-				<h3>Browse More</h3>
-				<h6>Latest Plant Collections</h6>
-					<?php recommendedCategory("leaf"); ?>
-				<h6>Latest Cactus Collections</h6>
-					<?php recommendedCategory("cactus"); ?>
+
 			</div>
 <!-- RECOMMENDED PRODUCTS END -->
 
