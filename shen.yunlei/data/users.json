@@ -1,0 +1,42 @@
+[
+	
+	{
+		"name":"Yunlei Shen",
+		"type":"Student",
+		"email":"yshen30@art.edu",
+		"classes":[605,608,333]
+	},
+	{
+		"name":"Amy Wang",
+		"type":"Teacher",
+		"email":"aw@art.edu",
+		"classes":[604,608,333]
+	},
+	{
+		"name":"Bing Smith",
+		"type":"Student",
+		"email":"bs30@art.edu",
+		"classes":[605,608,890]
+	},
+	{
+		"name":"Cathy Lee",
+		"type":"Staff",
+		"email":"el@art.edu",
+		"classes":[605,608,210]
+	},
+	{
+		"name":"Monica Baker",
+		"type":"Chef",
+		"email":"mb@art.edu",
+		"classes":[605,608,222]
+	},
+	{
+		"name":"Jack Wu",
+		"type":"Driver",
+		"email":"jw@art.edu",
+		"classes":[605,608,111]
+	}
+
+
+
+]

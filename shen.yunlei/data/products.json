@@ -1,0 +1,90 @@
+[
+	
+	{
+		"title":"Harry Potter and the Sorcerer's Stone",
+		"genres":"Fantasy",
+		"author":"J.K. Rowling",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+	{
+		"title":"The Moon and Sixpence",
+		"genres":"Fiction",
+		"author":"W. Somerset Maugham",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+	{
+		"title":"The Vanishing Half",
+		"genres":"Historical Fiction",
+		"author":"Brit Bennett",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+	{
+		"title":"Deacon King Kong",
+		"genres":"Fiction",
+		"author":"James McBride",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+	{
+		"title":"Betty",
+		"genres":"Historical Fiction",
+		"author":"Tiffany McDaniel",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+	{
+		"title":"The Okay Witch and the Hungry Shadow",
+		"genres":"Graphic Novels",
+		"author":"Emma Steinkellner",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+		{
+		"title":"The Silent Patient",
+		"genres":"Thriller",
+		"author":"Alex Michaelides",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+	{
+		"title":"The Guest List",
+		"genres":"Mystery",
+		"author":"Lucy Foley",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+	{
+		"title":"The Whisper Man",
+		"genres":"Thriller",
+		"author":"Alex North",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+	{
+		"title":"Miracle Creek",
+		"genres":"Mystery",
+		"author":"Angie Kim",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+	{
+		"title":"Searching for Sylvie Lee",
+		"genres":"Fiction",
+		"author":"Jean Kwok",
+		"price":"$14.99",
+		"QTY":"50"
+	},
+	{
+		"title":"The Family Upstairs",
+		"genres":"Mystery",
+		"author":"Lisa Jewell",
+		"price":"$14.99",
+		"QTY":"50"
+	}
+
+
+
+]
