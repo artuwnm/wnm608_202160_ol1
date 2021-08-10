@@ -35,23 +35,23 @@ function cartListTemplate($r,$o){
 	$totalfixed = number_format($o->total,2,'.','');
 	$selectamount = selectAmount($o->amount,10);
 	return $r.<<<HTML
-	<div class="display-flex">
+	<div class="display-flex" style="padding-top: 2em;">
 
 	<div class="flex-none image-thumbs">
 		<img src="$o->thumbnail">
 	</div>
 	<div class="flex-stretch">
 		<strong>$o->title</strong>
-		<form action="cart_actions.php?action=delete-cart-item" method="post">
+		<form action="cart_actions.php?action=delete-cart-item" method="post" style="font-size: 0.8em; padding-top: 2em;">
 			<input type="hidden" name="id" value="$o->id">
-			<button type="submit" class="form-button inline" value="Delete" style="font-size: 0.8em;">Delete</button>
+			<button type="submit" class="form-button inline" value="Delete">Delete</button>
 		</form>
 	</div>
 	<div class="flex-none">
 		<div>&dollar;$totalfixed</div>
 		<form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
 			<input type="hidden" name="id" value="$o->id">
-			<div class="form-select" style="font-size: 0.8em;">
+			<div class="form-select" style="font-size: 0.8em; padding-top: 4em;">
 				$selectamount
 			</div>
 		</form>
